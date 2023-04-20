@@ -25,7 +25,7 @@ export default function Home() {
           <p>
           LabLabAI - OpenAI Stack Hackathon submission. A web application that allows users to create briefs for creative projects and export/download them to a stlyed PDF document. Built with
           &nbsp;<code>React</code>,
-          &nbsp;<code>OpenAI's GPT-3 Davinci text-completion model</code>, and
+          &nbsp;<code>OpenAI&apos;s GPT-3 Davinci text-completion model</code>, and
           &nbsp;<code>Flask</code>. Received overwhelming positive feedback from start-up founders and engineering students. Presentational video can be found&nbsp;
             <a href="https://www.youtube.com/watch?v=zP22qaE0Rd0" target="_blank" rel="noreferrer" className="underline hover:text-neutral-800 dark:hover:text-neutral-300">
               here
@@ -60,7 +60,9 @@ export default function Home() {
           </p>
         </Project>
 
-        <Contact />
+        <div id="contact">
+          <Contact />
+        </div>
       </div>
   )
 }
