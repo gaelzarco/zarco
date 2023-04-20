@@ -16,7 +16,7 @@ export default function App( { Component, pageProps } : AppProps ) {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     
-    <main className={`cursor-default ${inter.className} flex min-h-screen flex-col items-center p-14 max-md:p-10 max-sm:p-5 max-sm:pt-5 bg-black text-white`}>
+    <main className={`cursor-default ${inter.className} flex min-h-screen flex-col items-center p-14 max-md:p-10 max-sm:p-5 bg-black text-white`}>
       <div className="sticky top-0 z-10 pt-5 w-full max-w-5xl items-center font-mono text-sm lg:flex">
           <NavBar />
       </div>
