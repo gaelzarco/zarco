@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes gradientAnimation {
+  0% {
+      border-color: rgba(156, 163, 175, 0.5);
+  }
+  50% {
+      border-color: rgba(156, 163, 175, 1);
+  }
+  100% {
+      border-color: rgba(156, 163, 175, 0.5);
+  }
+}

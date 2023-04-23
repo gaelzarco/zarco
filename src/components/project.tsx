@@ -17,7 +17,7 @@ interface ProjectsProps {
 export default function Project( { title, children, image1, image2, image3, github, vercel } : ProjectsProps ) {
 
     return (
-        <div className='mt-6 flex flex-col w-10/12 max-md:w-full mx-auto border rounded-md border-neutral-800 bg-neutral-900 px-4 pb-4 mb-4'>
+        <div className='mt-6 flex flex-col w-8/12 max-lg:w-full mx-auto border rounded-md border-neutral-800 bg-neutral-900 px-4 pb-4 mb-4'>
             <div className="inline-flex items-center justify-between w-full">
                 <div className="inline-flex">
                     <h1 className='font-bold text-md leading-10 px-4 pt-4'>
