@@ -1,6 +1,6 @@
 import { type Dispatch, type ReactNode, type SetStateAction, useState, useEffect } from "react"
 import Link from "next/link"
-
+import { motion } from "framer-motion"
 import { Root as ApectRatio } from "@radix-ui/react-aspect-ratio"
 import { CaretLeftIcon, CaretRightIcon, Cross2Icon, GitHubLogoIcon, VercelLogoIcon } from "@radix-ui/react-icons"
 
@@ -91,7 +91,12 @@ export function ImageCarousel( { title, children, images, count, setDisplay, git
       }, [currentImage]);
 
     return (
-        <div className="z-10 fixed flex justify-center content-center items-center w-screen h-screen top-0 left-0 bottom-0 right-0 shadow-2xl rounded-xl">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 0.75, ease: 'easeInOut' }}
+            className="z-20 fixed flex justify-center content-center items-center w-screen h-screen top-0 left-0 bottom-0 right-0 shadow-2xl rounded-xl"
+        >
             <div className="flex h-full w-full p-14 m-auto max-md:p-8 max-md:h-full max-md:w-full flex-col items-center bg-neutral-900/50 backdrop-blur-lg rounded-xl shadow-2xl">
                 <div className="flex m-auto flex-col w-10/12 max-md:w-full xl:max-w-[1000px]">
                     <div className="inline-flex items-center justify-between">
@@ -139,6 +144,6 @@ export function ImageCarousel( { title, children, images, count, setDisplay, git
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
