@@ -1,55 +1,150 @@
-import Project from "@/components/project"
-import Contact from "@/components/contact"
+import { type ReactNode, useEffect, useState, useRef, MouseEventHandler } from 'react';
+import { motion } from 'framer-motion'
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
+import { ArrowDownIcon, ArrowRightIcon } from '@radix-ui/react-icons';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 export default function Home() {
 
-  return (
-      <div id="work" className='flex flex-col items-center content-center justify-center p-10 pt-14 w-full text-left'>
-        <div className='flex flex-col w-8/12 max-lg:w-full mx-auto pb-4'>
-          <h1 className='font-bold text-md leading-10 hover:text-neutral-800 dark:hover:text-neutral-300 py-2'>
-            My work and experience
-          </h1>
-          <p className='text-sm'>
-          I&apos;m Gael Zarco- a former restaurant industry professional turned Full-Stack Engineer from Las Vegas. I create fast, responsive, and accessible web applications using <code>TypeScript</code>, <code>React</code>, <code>NextJS</code>, <code>NodeJS</code>,
-          and <code>TailwindCSS</code>. I&apos;m currently looking for a full-time position as an entry-level Software Engineer.
-          </p>
-        </div>
-        <Project title="Briefo" 
-        image1="/static/briefo-x1_so.png" image2="/static/briefo-x2_so.png" image3="/static/briefo-x3_so.png"
-        github='https://github.com/gaelzarco/ai-creative-assistant' vercel='https://ai-creative-assistant.vercel.app/'>
-          <p>
-          LabLabAI - OpenAI Stack Hackathon submission. A web application that allows users to create briefs for creative projects and export/download them to a stlyed PDF document. Built with <code>React</code>, <code>OpenAI&apos;s GPT-3 Davinci text-completion model</code>, and <code>Flask</code>. Received overwhelming positive feedback from start-up founders and engineering students. Presentational video can be found <a href="https://www.youtube.com/watch?v=zP22qaE0Rd0" target="_blank" rel="noreferrer" className="underline hover:text-neutral-800 dark:hover:text-neutral-300"> here</a>.
-          </p>
-        </Project>
-        <Project title="Moxie" 
-        image1="/static/moxie-x1_so.png" image2="/static/moxie-x2_so.png" image3="/static/moxie-x3_so.png"
-        github="https://github.com/gaelzarco/moxie" vercel="https://moxie-x.vercel.app/">
-          <p>
-          A serverless social media website with a focus on interactivity and polish. Built with <code>TypeScript</code>, <code>NextJS</code>, <code>TailwindCSS</code>, <code>RadixUI</code>, <code>tRPC</code>, <code>Prisma ORM</code>, <code>PlanetScale</code>, and <code>Clerk</code> for user authenication/management. Features a fully functional user feed, comments, likes, and more. Sign-up, log in and make your first post. You can always delete it later. 🚀
-          </p>
-        </Project>
-        <Project title="Audix" 
-        image1="/static/audix-x1_so.png" image2="/static/audix-x2_so.png" image3="/static/audix-x3_so.png"
-        github='https://github.com/gaelzarco/audix'vercel='https://audix.vercel.app/'>
-          <p>
-          Inspired by Receiptify. Allows users to generate a &apos;STATIC&apos; (image of their top Spotify tracks from a user-selected timeframe) to download and share with the world. Crafted utilizing  <code>React</code>, <code>NodeJS</code>, <code>Express</code>, <code>Flask</code>, and features <code>Spotify Web API</code> integration.
-          </p>
-        </Project>
+  const [currentTime, setCurrentTime] = useState<string>(dayjs().tz('America/Los_Angeles').format('hh:mm A'))
+  const flagRef = useRef<HTMLParagraphElement | null>(null)
 
-        <div id="contact" className="flex flex-col w-full mx-auto pb-4 mt-4">
-          <Contact />
+  const handleTimeMouseMove = (e: MouseEvent) => {
+    if (flagRef.current) {
+      flagRef.current.style.left = `${e.clientX + 10}px`
+      flagRef.current.style.top = `${e.clientY + 10}px`
+    }
+  }
+
+  const handleTimeHoverEnter = () => {
+    const flagImage = document.createElement('p')
+    flagImage.textContent = '🇺🇸'
+    flagImage.style.position = 'absolute'
+    flagImage.style.width = '30px'
+    flagImage.style.height = '20px'
+    flagRef.current = flagImage
+
+    document.body.appendChild(flagImage)
+
+    document.addEventListener('mousemove', handleTimeMouseMove)
+  }
+
+const handleTimeHoverLeave = () => {
+  if (flagRef.current) {
+    document.body.removeChild(flagRef.current)
+    flagRef.current = null
+  }
+}
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTime(dayjs().tz('America/Los_Angeles').format('hh:mm A'))
+    }, 1000)
+
+    return () => {
+      clearInterval(interval)
+      document.removeEventListener('mousemove', handleTimeMouseMove)
+    }
+  }, [])
+
+  return (
+      <div id='hero' className='flex flex-col w-full min-h-screen p-4 pt-12 max-md:pt-6 w-full'>
+        <div className='flex flex-wrap justify-between'>
+          <div className='w-7/12 max-w-[850px] max-lg:w-10/12'>
+            <motion.p
+              className='leading-[3.5rem] text-5xl max-md:text-4xl max-sm:text-3xl'
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.75 }}
+            >
+            Full-Stack engineer building fast, responsive, and accessible web applications.
+            </motion.p>
+          </div>
+
+          <div className='leading-none h-[86px] w-[520px] flex flex-wrap-reverse items-center xl:justify-end pt-4 text-sm max-sm:text-xs'>
+            <SlideInDiv>
+              <p className='border border-white rounded-full p-1 px-2'>2+ YEARS OF EXPERIENCE</p>
+            </SlideInDiv>
+            <SlideInDiv>
+              <p className='border border-white rounded-full p-1 ml-2 px-2'>BOOTCAMP GRAD</p>
+            </SlideInDiv>
+            <SlideInDiv>
+              <p className='border border-white rounded-full p-1 px-2'>SERVER @ RED LOBSTER 🦞</p>
+            </SlideInDiv>
+          </div>
+        </div>
+      
+        <div className='h-[86px] flex flex-wrap items-center text-center justify-between w-full max-sm:mt-[14rem] max-md:mt-[20rem] mt-[42rem]'>
+          <SlideInDiv>
+            <p className='leading-none flex items-center w-[197px] border border-white rounded-lg p-1 px-2 text-sm max-sm:text-xs'
+            onMouseEnter={handleTimeHoverEnter} onMouseLeave={handleTimeHoverLeave}>
+              LOCAL TIME&nbsp;<ArrowRightIcon />&nbsp;{currentTime}
+            </p>
+          </SlideInDiv>
+
+          <SlideUpDiv>
+            <p className='inline-flex items-center text-2xl max-sm:text-xl hover:cursor-pointer'>
+              Go to work&nbsp;<ArrowDownIcon />
+             </p>
+          </SlideUpDiv>
+        </div>
+
+        <div id='work' className='flex flex-wrap items-center justify-between w-full mt-48'>
+            <SlideUpDiv className='w-1/2' delay={0.5}>
+              <p className='text-4xl'>
+                Showcase of selected projects and Hackathon submissions
+              </p>
+            </SlideUpDiv>
+            <div className='w-1/2 text-md flex flex-wrap justify-end'>
+              <SlideUpDiv className='inline-flex items-center' delay={0.5}>
+                <p>FEATURING</p>
+                <p className='border border-white rounded-full ml-2 p-1 px-2'>FULL-STACK</p>
+                <p className='border border-white rounded-full ml-2 p-1 px-2'>UI/UX</p>
+              </SlideUpDiv>
+            </div>
         </div>
       </div>
   )
 }
 
-// <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-//   <Image
-//     className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-//     src="/next.svg"
-//     alt="Next.js Logo"
-//     width={180}
-//     height={37}
-//     priority
-//   />
-// </div>
+const SlideInDiv = ({ children, delay, className } : { children: ReactNode, delay?: number, className?: string }) => {
+  return (
+    <motion.div
+      className={className}
+      variants={{
+        hidden: { opacity: 0, x: 10 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.75, delay: delay }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+const SlideUpDiv = ({ children, delay, className } : { children: ReactNode, delay?: number, className?: string }) => {
+  return (
+    <motion.div
+    className={className}
+      variants={{
+        hidden: { opacity: 0, y: 10 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.75, delay: delay }}
+    >
+      {children}
+    </motion.div>
+  );
+};
