@@ -3,7 +3,6 @@ import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-
 import { AnimatePresence } from 'framer-motion'
 
 import NavBar from '@/components/navbar'

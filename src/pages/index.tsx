@@ -1,4 +1,4 @@
-import { type ReactNode, useEffect, useState, useRef, MouseEventHandler } from 'react';
+import { type ReactNode, useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc';
@@ -70,45 +70,59 @@ const handleTimeHoverLeave = () => {
           </div>
 
           <div className='leading-none h-[86px] w-[520px] flex flex-wrap-reverse items-center xl:justify-end pt-4 text-sm max-sm:text-xs'>
-            <SlideInDiv>
+            <SlideInDiv delay={1}>
               <p className='border border-white rounded-full p-1 px-2'>2+ YEARS OF EXPERIENCE</p>
             </SlideInDiv>
-            <SlideInDiv>
+            <SlideInDiv delay={1}>
               <p className='border border-white rounded-full p-1 ml-2 px-2'>BOOTCAMP GRAD</p>
             </SlideInDiv>
-            <SlideInDiv>
+            <SlideInDiv delay={1}>
               <p className='border border-white rounded-full p-1 px-2'>SERVER @ RED LOBSTER 🦞</p>
             </SlideInDiv>
           </div>
         </div>
       
         <div className='h-[86px] flex flex-wrap items-center text-center justify-between w-full max-sm:mt-[14rem] max-md:mt-[20rem] mt-[42rem]'>
-          <SlideInDiv>
-            <p className='leading-none flex items-center w-[197px] border border-white rounded-lg p-1 px-2 text-sm max-sm:text-xs'
+          <SlideInDiv delay={1.5}>
+            <p className='leading-none flex w-[197px] border border-white rounded-lg p-1 px-2 text-sm max-sm:text-xs'
             onMouseEnter={handleTimeHoverEnter} onMouseLeave={handleTimeHoverLeave}>
               LOCAL TIME&nbsp;<ArrowRightIcon />&nbsp;{currentTime}
             </p>
           </SlideInDiv>
 
-          <SlideUpDiv>
+          <SlideUpDiv delay={2}>
             <p className='inline-flex items-center text-2xl max-sm:text-xl hover:cursor-pointer'>
-              Go to work&nbsp;<ArrowDownIcon />
+              Go to work&nbsp;
+              <motion.span
+                animate={{ y: 10, opacity: 0, transition: { duration: 5, repeat: Infinity },  }}
+                exit={{ y: 0, opacity: 0 }}
+              >
+                <ArrowDownIcon />
+              </motion.span>
              </p>
           </SlideUpDiv>
         </div>
 
         <div id='work' className='flex flex-wrap items-center justify-between w-full mt-48'>
-            <SlideUpDiv className='w-1/2' delay={0.5}>
-              <p className='text-4xl'>
+            <SlideUpDiv className='w-1/2 max-sm:w-full text-4xl max-md:text-2xl' delay={2.5}>
+              <p>
                 Showcase of selected projects and Hackathon submissions
               </p>
             </SlideUpDiv>
-            <div className='w-1/2 text-md flex flex-wrap justify-end'>
-              <SlideUpDiv className='inline-flex items-center' delay={0.5}>
-                <p>FEATURING</p>
-                <p className='border border-white rounded-full ml-2 p-1 px-2'>FULL-STACK</p>
-                <p className='border border-white rounded-full ml-2 p-1 px-2'>UI/UX</p>
-              </SlideUpDiv>
+            <div className='h-[70px] w-1/2 max-sm:w-full text-sm max-sm:text-xs flex items-center justify-end max-sm:justify-start'>
+              <div className='flex flex-col my-auto '>
+                <SlideUpDiv className='inline-flex items-center justify-end' delay={2.5}>
+                  <p>FEATURING</p>
+                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>FULL-STACK</p>
+                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>UI/UX</p>
+                </SlideUpDiv>
+                <SlideUpDiv className='inline-flex items-center justify-end max-sm:justify-start' delay={3}>
+                  <p>FROM</p>
+                  <p className='leading-none border border-white rounded-full ml-2 mr-2 p-1 px-2'>2021</p>
+                  <p>TO</p>
+                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>2023</p>
+                </SlideUpDiv>
+              </div>
             </div>
         </div>
       </div>
