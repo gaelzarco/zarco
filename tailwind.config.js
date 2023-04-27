@@ -6,18 +6,8 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-        animation: {
-            'gradient': 'gradientAnimation 2s infinite',
-        },
-    },
 },
 variants: {
-    extend: {
-        ringColor: ['focus'],
-        ringOpacity: ['focus'],
-        ringWidth: ['focus'],
-    },
 },
 // ...
 plugins: [],
