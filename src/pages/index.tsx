@@ -15,10 +15,13 @@ export default function Home() {
 
   const handleTimeMouseMove = (e: MouseEvent) => {
     if (flagRef.current) {
-      flagRef.current.style.left = `${e.clientX + 10}px`
-      flagRef.current.style.top = `${e.clientY + 10}px`
+      const rect = flagRef.current.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+      flagRef.current.style.left = `${e.clientX - rect.width - scrollLeft}px`;
+      flagRef.current.style.top = `${e.clientY - rect.height + scrollTop}px`;
     }
-  }
+  };
 
   const handleTimeHoverEnter = () => {
     const flagImage = document.createElement('p')
@@ -52,7 +55,7 @@ const handleTimeHoverLeave = () => {
   }, [])
 
   return (
-      <div id='hero' className='flex flex-col w-full min-h-screen p-4 pt-12 max-md:pt-6 w-full'>
+      <div id='hero' className='flex flex-col w-full min-h-screen p-4 pt-12 max-md:pt-6 w-full bg-neutral-900/10'>
         <div className='flex flex-wrap justify-between'>
           <div className='w-7/12 max-w-[850px] max-lg:w-10/12'>
             <motion.p

@@ -6,12 +6,14 @@ import { Link as ScrollLink } from 'react-scroll';
 import { motion } from "framer-motion";
 import { LinkedInLogoIcon, GitHubLogoIcon, PaperPlaneIcon, CircleIcon } from '@radix-ui/react-icons'
 
+// shadow-[10px_-50px_1000px_-6px]
+
 export default function NavBar() {
 
   return (
-    <nav className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-white/10 backdrop-blur-xl p-2 px-4 m-2 rounded-md shadow-[10px_-50px_1000px_-6px]`}>
+    <nav className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-neutral-800/10 backdrop-blur-xl p-2 px-4 m-2 rounded-md drop-shadow-[0_0px_20px_rgba(255,255,255,0.25)] shadow-neutral-800`}>
         <div className='flex items-center content-center justify-between text-sm'>
-            <Link href='/' className='hover:text-neutral-800 dark:hover:text-neutral-300 text-md font-semibold'>
+            <Link href='/' className='hover:text-neutral-800 dark:hover:text-neutral-300 text-md font-bold'>
                 <SlideInP delay={0}>
                     Gael Zarco
                 </SlideInP>
