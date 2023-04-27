@@ -87,7 +87,7 @@ const handleTimeHoverLeave = () => {
       
         <div className='h-[86px] flex flex-wrap items-center text-center justify-between w-full max-sm:mt-[14rem] max-md:mt-[20rem] mt-[42rem]'>
           <SlideInDiv delay={1.5}>
-            <p className='leading-none flex w-[197px] border border-white rounded-lg p-1 px-2 text-sm max-sm:text-xs'
+            <p className='leading-none flex w-[197px] max-sm:w-[173px] border border-white rounded-lg p-1 px-2 text-sm max-sm:text-xs'
             onMouseEnter={handleTimeHoverEnter} onMouseLeave={handleTimeHoverLeave}>
               LOCAL TIME&nbsp;<ArrowRightIcon />&nbsp;{currentTime}
             </p>
@@ -96,12 +96,7 @@ const handleTimeHoverLeave = () => {
           <SlideUpDiv delay={2}>
             <p className='inline-flex items-center text-2xl max-sm:text-xl hover:cursor-pointer'>
               Go to work&nbsp;
-              <motion.span
-                animate={{ y: 10, opacity: 0, transition: { duration: 5, repeat: Infinity },  }}
-                exit={{ y: 0, opacity: 0 }}
-              >
-                <ArrowDownIcon />
-              </motion.span>
+              <ArrowDownIcon />
              </p>
           </SlideUpDiv>
         </div>
