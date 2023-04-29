@@ -2,7 +2,6 @@ import { type ReactNode, useState } from 'react'
 import Link from 'next/link'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 const jakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
-import { Link as ScrollLink } from 'react-scroll';
 import { motion } from "framer-motion";
 import { LinkedInLogoIcon, GitHubLogoIcon, PaperPlaneIcon, CircleIcon } from '@radix-ui/react-icons'
 
@@ -41,18 +40,11 @@ export default function NavBar() {
                     about
                 </SlideInP>
             </Link>
-            <ScrollLink
-                to='work'
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-100}
-                className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-4 font-medium'
-            >
+            <Link href='#work' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-4 font-medium'>
                 <SlideInP delay={0.6}>
                     work
                 </SlideInP>
-            </ScrollLink>
+            </Link>
             <Link href='https://www.linkedin.com/in/gaelzarco/' target='_blank' className="hover:text-neutral-800 dark:hover:text-neutral-300 pl-4 font-medium">
                 <LinkedInLogoIcon />
             </Link>
