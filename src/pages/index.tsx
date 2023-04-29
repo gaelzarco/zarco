@@ -1,4 +1,4 @@
-import { type ReactNode, useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc';
@@ -57,7 +57,7 @@ const handleTimeHoverLeave = () => {
   }, [])
 
   return (
-      <div id='hero' className='flex flex-col w-full min-h-screen p-4 pt-12 max-md:pt-6 w-full bg-neutral-900/10'>
+      <div id='hero' className='flex flex-col w-full min-h-screen max-w-[1600px] p-4 pt-12 max-md:pt-6 w-full bg-neutral-900/10'>
         <div className='flex flex-wrap justify-between'>
           <div className='w-7/12 max-w-[850px] max-lg:w-10/12'>
             <motion.p
@@ -104,16 +104,17 @@ const handleTimeHoverLeave = () => {
         </div>
 
         <div id='work' className='flex flex-wrap items-center justify-between w-full mt-48 max-sm:mt-36'>
-            <SlideUpDiv className='w-1/2 max-sm:w-full text-4xl max-md:text-2xl' delay={1.75}>
+            <SlideUpDiv className='w-5/12 max-sm:w-full text-4xl max-md:text-2xl' delay={1.75}>
               <p>
                 Showcase of selected projects and various other works
               </p>
             </SlideUpDiv>
-            <div className='h-[70px] w-1/2 max-sm:w-full text-sm max-md:text-xs flex items-center justify-end max-sm:justify-start'>
+            <div className='h-[70px] w-7/12 max-sm:w-full text-md max-md:text-xs flex items-center justify-end max-sm:justify-start'>
               <div className='flex flex-col my-auto '>
                 <SlideUpDiv className='inline-flex items-center justify-end' delay={1.75}>
                   <p>FEATURING</p>
                   <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>FULL-STACK</p>
+                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>API</p>
                   <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>UI/UX</p>
                 </SlideUpDiv>
                 <SlideUpDiv className='inline-flex items-center justify-end max-sm:justify-start mt-2' delay={1.85}>
@@ -127,65 +128,86 @@ const handleTimeHoverLeave = () => {
         </div>
 
         <SectionSeparator>
-          <p>SelectedProjects</p>
+          <p>Selected Projects</p>
         </SectionSeparator>
 
         <HorizontalScrollDiv>
-          <div className="flex min-w-[420px] h-[520px] max-md:w-[320px] max-md:h-[400px]">
-            <img
-              src={"../static/audix-x1_so.png"}
-              className="h-full w-full p-1 object-cover rounded-2xl hover:cursor-pointer"
-            />
-          </div>
+          <ProjectShowcase first projectName='AUDIX' projectImgSrc='../static/audix-x1_so.png' 
+          topLeftTag1='SPOTIFY API' topLeftTag2='UI/UX' topRightTag='2022' />
 
-          <HorizontalDivProject>
-            <img
-              src={"../static/moxie-x1_so.png"}
-              className="h-full w-full p-1 object-cover rounded-2xl hover:cursor-pointer"
-            />
-          </HorizontalDivProject>
+          <ProjectShowcase projectName='MOXIE' projectImgSrc='../static/moxie-x1_so.png'
+          topLeftTag1='FULL-STACK' topLeftTag2='UI/UX' topRightTag='2023' />
 
-          <HorizontalDivProject>
-            <img
-              src={"../static/briefo-x3_so.png"}
-              className="h-full w-full p-1 object-cover rounded-2xl hover:cursor-pointer"
-            />
-          </HorizontalDivProject>
+          <ProjectShowcase projectName='NEXT E-COM' projectImgSrc='../static/nexte-com-x1_so.png'
+          topLeftTag1='FULL-STACK' topLeftTag2='UI/UX' topRightTag='2022' />
+          
+          <ProjectShowcase projectName='SPACE SHOOTER' projectImgSrc='../static/spaceshooter-x1_so.png'
+          topLeftTag1='WEB GAME' topLeftTag2='VANILLA JS' topRightTag='2021' />
 
-          <HorizontalDivProject>
-            <img
-              src={"../static/audix-x1_so.png"}
-              className="h-full w-full p-1 object-cover rounded-2xl hover:cursor-pointer"
-            />
-          </HorizontalDivProject>
           </HorizontalScrollDiv>
 
           <SectionSeparator>
-            <p>Other Works</p>
+            <p>Hackathons</p>
           </SectionSeparator>
 
-          <div className='ml-1 mt-14 mb-14 flex flex-col w-full border-y border-white w-[98.2%] max-md:mb-12'>
-              <div className='mx-3 h-[70px] inline-flex justify-between hover:rounded-md hover:drop-shadow-[0_0px_20px_rgba(255,255,255,0.25)] hover:shadow-neutral-800'>
+          <motion.div className='mt-14 mb-14 flex flex-col w-full w-full max-md:mb-12'
+            initial={{ opacity:0, y: 10 }}
+            animate={{ opacity:1, y: 0}}
+            transition={{ 
+              duration: 0.75, 
+              delay: 2 
+            }}
+          >
+              <motion.div 
+                className='px-[1rem] h-[70px] inline-flex justify-between hover:cursor-pointer rounded-lg'
+                initial={{ paddingLeft: '1rem', paddingRight: '1rem', boxShadow: '0 0 20px rgba(255, 255, 255, 0.25)' }}
+                whileHover={{ paddingLeft: '1.5rem', paddingRight: '1.5rem', boxShadow: '0 0 20px rgba(255, 255, 255, 0.45)'}}
+                transition={{ duration: 0.2, }}
+              >
                 <div className='inline-flex text-2xl max-md:text-xl items-center'>
                   <p>Briefo</p>
                 </div>
                 <div className='inline-flex items-center text-sm max-md:text-xs'>
-                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>HACKATHON</p>
-                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>GPT-3 DAVINCI</p>
+                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>OPENAI-HACKATHON</p>
+                  <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>LABLABAI</p>
                   <p className='leading-none border border-white rounded-full ml-2 p-1 px-2'>2023</p>
                 </div>
-              </div>
-          </div>
+              </motion.div>
+          </motion.div>
 
         <Footer />
       </div>
   )
 }
 
-const HorizontalDivProject = ({ children } : {children: ReactNode}) => {
+const ProjectShowcase = ({ projectName, topLeftTag1, topLeftTag2, topRightTag, projectImgSrc, first } : { projectName: string, topLeftTag1: string, topLeftTag2: string, topRightTag: string, projectImgSrc: string, first?: boolean }) => {
   return (
-    <div className="flex min-w-[420px] h-[520px] ms-2 max-md:w-[320px] max-md:h-[400px]">
-      {children}
+    <div className={`relative ${!first && 'ml-3'} project flex min-w-[420px] h-[520px] max-md:w-[320px] max-md:h-[400px] hover:cursor-pointer rounded-2xl overflow-hidden`}>
+    <div className="absolute z-10 w-full h-full flex flex-col justify-between pointer-events-none">
+      <div className="inline-flex items-center justify-between w-full p-4">
+        <div className="inline-flex items-center">
+          <p className="leading-none border border-white rounded-full p-1 px-2">{topLeftTag1}</p>
+          <p className="leading-none border border-white rounded-full ml-2 p-1 px-2">{topLeftTag2}</p>
+        </div>
+        <div className="inline-flex items-center justify-end">
+          <p className="leading-none border border-white rounded-full p-1 px-2">{topRightTag}</p>
+        </div>
+      </div>
+
+      <div className="inline-flex items-center justify-between w-full p-4">
+        <div className="inline-flex items-center">
+          <p className="leading-none p-1 px-2 text-2xl max-md:text-xl">{projectName}</p>
+        </div>
+      </div>
     </div>
+
+    <motion.img
+      src={projectImgSrc}
+      className="absolute object-cover w-full h-full rounded-2xl"
+      initial={{ scale: 1 }}
+      whileHover={{ scale: 1.10 }}
+      transition={{ duration: 0.5 }}
+    />
+  </div>
   )
 }

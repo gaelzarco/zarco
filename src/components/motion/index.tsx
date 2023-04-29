@@ -11,7 +11,7 @@ export function HorizontalScrollDiv({ children } : { children: ReactNode[] }) {
   
     const handleScroll = (e: WheelEvent) => {
       const delta = Math.max(-1, Math.min(1, e.deltaY))
-      const scrollAmount = delta * 200
+      const scrollAmount = delta * 230
       const projectDiv = projectDivRef.current
       if (projectDiv) {
         const maxScrollLeft = projectDiv.scrollWidth - projectDiv.clientWidth

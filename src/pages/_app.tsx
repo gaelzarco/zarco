@@ -15,10 +15,11 @@ export default function App( { Component, pageProps, router } : AppProps ) {
       <title>Zarco</title>
       <meta name="description" content="Gael Zarco- Full Stack Software Engineer from Sin City" />
       <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     </Head>
     
     <main className={`cursor-default ${inter.className} flex min-h-screen flex-col items-center bg-black text-white`}>
-      <div className="sticky top-0 z-10 w-full items-center text-sm">
+      <div className="sticky top-0 z-10 max-w-[1600px] w-full items-center text-sm">
           <NavBar />
       </div>
       <AnimatePresence>
