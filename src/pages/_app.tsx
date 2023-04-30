@@ -12,7 +12,7 @@ export default function App( { Component, pageProps, router } : AppProps ) {
   return (
     <>
     <Head>
-      <title>Gael Zarco </title>
+      <title>Gael Zarco ∙ FS Engineer</title>
       <meta name="description" content="Gael Zarco- Full Stack Software Engineer from Sin City" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import { ArrowUpIcon} from '@radix-ui/react-icons'
-import { SlideUpDiv } from './motion'
+import { ArrowUpIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
     return (
@@ -21,23 +20,23 @@ export default function Footer() {
             </Link>
 
             <div className='inline-flex items-center justify-between w-full -mt-10 max-sm:mt-0'>
-                <SlideUpDiv delay={0} className='flex items-center text-2xl max-sm:text-xl'>
+                <div className='flex items-center text-2xl max-sm:text-xl'>
                     <p>
                     © 2023
                     </p>
-                </SlideUpDiv>
+                </div>
 
-                <SlideUpDiv delay={0} className='flex items-center text-md max-sm:text-xs'>
+                <div className='flex items-center text-md max-sm:text-xs'>
                     <p>
                         Inspired by <a href='https://pedromc.design/' target='_blank' className='underline hover:text-neutral-300'>Pedro</a>
                     </p>
-                </SlideUpDiv>
+                </div>
 
 
-                <SlideUpDiv delay={0} className='inline-flex items-center justify-end text-2xl max-sm:text-xl hover:cursor-pointer'>
+                <div className='inline-flex items-center justify-end text-2xl max-sm:text-xl hover:cursor-pointer'>
                     Back to top&nbsp;
                     <ArrowUpIcon />
-                </SlideUpDiv>
+                </div>
             </div>
         </div>
     )
