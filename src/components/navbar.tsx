@@ -1,23 +1,26 @@
-import { type ReactNode, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 const jakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
 import { motion } from "framer-motion";
+
 import { LinkedInLogoIcon, GitHubLogoIcon, PaperPlaneIcon, CircleIcon } from '@radix-ui/react-icons'
+
+import { SlideInP } from './motion'
 
 export default function NavBar() {
     const [ paperPlaneIcon, setPaperPlaneIcon ] = useState(false)
 
   return (
-    <nav className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-neutral-800/10 backdrop-blur-xl p-2 px-4 m-2 rounded-md drop-shadow-[0_0px_20px_rgba(255,255,255,0.25)] shadow-neutral-800`}>
+    <nav className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-neutral-900/50 backdrop-blur-xl p-3 px-4 m-2 rounded-md drop-shadow-[0_0px_20px_rgba(255,255,255,0.25)] shadow-neutral-800`}>
         <div className='flex items-center content-center justify-between text-sm'>
-            <Link href='/' className='hover:text-neutral-800 dark:hover:text-neutral-300 text-md font-bold'>
+            <Link href='/' className='hover:text-neutral-800 dark:hover:text-neutral-300 text-md lg:text-lg font-semibold'>
                 <SlideInP delay={0}>
                     Gael Zarco
                 </SlideInP>
             </Link>
 
-            <a href='mailto:gaelxarco@icloud.com' target='_blank' className='hidden sm:inline-flex items-center hover:text-neutral-800 dark:hover:text-neutral-300 text-md border border-white font-semibold ml-4 rounded-full p-1 px-2 leading-none'
+            <Link href='mailto:gaelxarco@icloud.com' target='_blank' className='hidden sm:inline-flex items-center hover:text-neutral-800 dark:hover:text-neutral-300 text-md border border-white ml-8 rounded-full p-1 px-2 leading-none'
             onMouseEnter={() => setPaperPlaneIcon(true)} onMouseLeave={() => setPaperPlaneIcon(false)}>
                 {paperPlaneIcon ? <PaperPlaneIcon className='mr-2 text-green-400 rotate-[330deg]' /> : <CircleIcon className='mr-2 text-green-400 bg-green-400 rounded-full'/>}
                 <motion.p
@@ -27,25 +30,25 @@ export default function NavBar() {
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{ duration: 0.75, delay: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     Available for hire
                 </motion.p>
-            </a>
+            </Link>
         </div>
 
-        <div className='flex items-center content-center justify-between text-sm'>
-            <Link href='#about' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-8 font-medium'>
+        <div className='flex items-center content-center justify-between text-md lg:text-lg'>
+            <Link href='#work' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-8'>
                 <SlideInP delay={0.4}>
-                    about
+                    Work
                 </SlideInP>
             </Link>
-            <Link href='#work' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-4 font-medium'>
+            <Link href='/about' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-4 max-md:pr-0'>
                 <SlideInP delay={0.6}>
-                    work
+                    About
                 </SlideInP>
             </Link>
-            <Link href='https://www.linkedin.com/in/gaelzarco/' target='_blank' className="hover:text-neutral-800 dark:hover:text-neutral-300 pl-4 font-medium">
+            <Link href='https://www.linkedin.com/in/gaelzarco/' target='_blank' className="hover:text-neutral-800 dark:hover:text-neutral-300 pl-6 font-medium">
                 <LinkedInLogoIcon />
             </Link>
             <Link href='https://github.com/gaelzarco/' target='_blank' className="hover:text-neutral-800 dark:hover:text-neutral-300 pl-4 font-medium">
@@ -55,20 +58,3 @@ export default function NavBar() {
     </nav>
   )
 }
-
-const SlideInP = ( { children, delay } : { children: ReactNode, delay: number }) => {
-    return (
-      <motion.p
-      className='hover:cursor-pointer'
-        variants={{
-          hidden: { opacity: 0, y: 5 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.75, delay: delay }}
-      >
-        {children}
-      </motion.p>
-    );
-  };
