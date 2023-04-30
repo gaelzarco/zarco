@@ -1,6 +1,4 @@
-import { type ReactNode, useEffect } from "react"
-import { useRouter } from "next/router"
-import Link from "next/link"
+import type { ReactNode } from "react"
 import { motion } from "framer-motion"
 
 export const SectionSeparator= ({ children } : { children: ReactNode }) => {
@@ -71,18 +69,18 @@ export const SlideInP = ( { children, delay, className } : { children: ReactNode
 }
 
 export const SlideUpP = ( { children, delay, className } : { children: ReactNode, delay?: number, className?: string }) => {
-return (
-  <motion.p
-  className={className}
-    variants={{
-      hidden: { opacity: 0, y: 5 },
-      visible: { opacity: 1, y: 0 },
-    }}
-    initial="hidden"
-    animate="visible"
-    transition={{ duration: 0.5, delay: delay }}
-  >
-    {children}
-  </motion.p>
-);
+  return (
+    <motion.p
+    className={className}
+      variants={{
+        hidden: { opacity: 0, y: 5 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.5, delay: delay }}
+    >
+      {children}
+    </motion.p>
+  );
 };

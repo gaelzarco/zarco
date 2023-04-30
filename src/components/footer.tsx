@@ -1,10 +1,8 @@
 import Link from 'next/link'
 import { Link as SmoothScrollLink } from 'react-scroll'
-import { useRouter } from 'next/router'
 import { ArrowUpIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
-    const router = useRouter()
 
     return (
         <div className='bottom-0 flex flex-col w-full mt-6 max-sm:-mt-6'>
