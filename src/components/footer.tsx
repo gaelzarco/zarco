@@ -1,9 +1,13 @@
 import Link from 'next/link'
+import { Link as SmoothScrollLink } from 'react-scroll'
+import { useRouter } from 'next/router'
 import { ArrowUpIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
+    const router = useRouter()
+
     return (
-        <div className='bottom-0 flex flex-col w-full max-sm:-mt-6'>
+        <div className='bottom-0 flex flex-col w-full mt-6 max-sm:-mt-6'>
             <Link href='mailto:gaelxarco@icloud.com' target='_blank'
                 className='footer-container relative block h-[120px] max-sm:h-[45px] bg-neutral-900/10 min-w-full border border-white rounded-lg max-sm:rounded-md text-8xl max-sm:text-3xl mt-8 hover:bg-white hover:text-black cursor-pointer overflow-hidden'
             >
@@ -26,17 +30,23 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className='flex items-center text-md max-sm:text-xs'>
+                <div className='flex items-center text-xs'>
                     <p>
-                        Inspired by <a href='https://pedromc.design/' target='_blank' className='underline hover:text-neutral-300'>Pedro</a>
+                        Inspired by <a href='https://www.awwwards.com/sites/pedro-matos-chaves-design' target='_blank' className='underline hover:text-neutral-300'>Pedro</a>
                     </p>
                 </div>
 
 
-                <div className='inline-flex items-center justify-end text-2xl max-sm:text-xl hover:cursor-pointer'>
+                <SmoothScrollLink
+                    to='hero'
+                    smooth={true}
+                    duration={1000}
+                    offset={-100}  
+                    className='inline-flex items-center justify-end text-2xl max-sm:text-xl hover:cursor-pointer'
+                >
                     Back to top&nbsp;
                     <ArrowUpIcon />
-                </div>
+                </SmoothScrollLink>
             </div>
         </div>
     )

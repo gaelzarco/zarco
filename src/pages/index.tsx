@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Link as SmoothScrollLink } from 'react-scroll'
 import { motion } from 'framer-motion'
 
 import { ArrowDownIcon } from '@radix-ui/react-icons';
@@ -47,10 +48,16 @@ export default function Home() {
           </SlideInDiv>
 
           <SlideUpDiv delay={1}>
-            <p className='inline-flex items-center text-2xl max-md:text-xl hover:cursor-pointer'>
+            <SmoothScrollLink
+              to='work'
+              smooth={true}
+              duration={1000}
+              offset={-100}  
+              className='inline-flex items-center text-2xl max-md:text-xl hover:cursor-pointer'
+            >
               Go to work&nbsp;
               <ArrowDownIcon />
-             </p>
+            </SmoothScrollLink>
           </SlideUpDiv>
         </div>
 
@@ -112,7 +119,7 @@ export default function Home() {
               className='px-[1rem] h-[70px] inline-flex justify-between hover:cursor-pointer rounded-lg'
               initial={{ paddingLeft: '1rem', paddingRight: '1rem', boxShadow: '0 0 20px rgba(255, 255, 255, 0.25)' }}
               whileHover={{ paddingLeft: '1.5rem', paddingRight: '1.5rem', boxShadow: '0 0 20px rgba(255, 255, 255, 0.45)'}}
-              transition={{ duration: 0.2, }}
+              transition={{ duration: 0.2 }}
             >
               <Link href='briefo' className='w-full h-full inline-flex justify-between items-center '>
                 <div className='inline-flex text-2xl max-md:text-xl items-center'>

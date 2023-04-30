@@ -84,7 +84,7 @@ export default function HorizontalScroll({ children, delay } : { children: React
         animate="visible"
         transition={{ duration: 0.5, delay: delay }}
       >
-        <div className="flex overflow-x-scroll my-20 max-md:my-10 scroll-smooth"
+        <div className="horizontalscroll flex overflow-x-scroll my-20 max-md:my-10 scroll-smooth scrollbar-none"
           ref={projectDivRef as Ref<HTMLDivElement>}
           onMouseEnter={() => setAllowScroll(true)}
           onMouseLeave={() => setAllowScroll(false)}

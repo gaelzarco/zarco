@@ -18,6 +18,10 @@ body {
   pointer-events: none;
 }
 
+.horizontalscroll::-webkit-scrollbar {
+  display: none;
+}
+
 .footer-container {
   top: 50%;
   left: 50%;

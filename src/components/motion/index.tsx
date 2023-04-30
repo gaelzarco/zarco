@@ -1,4 +1,6 @@
-import type { ReactNode } from "react"
+import { type ReactNode, useEffect } from "react"
+import { useRouter } from "next/router"
+import Link from "next/link"
 import { motion } from "framer-motion"
 
 export const SectionSeparator= ({ children } : { children: ReactNode }) => {

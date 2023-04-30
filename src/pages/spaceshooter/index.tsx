@@ -15,7 +15,7 @@ export default function SpaceShooter() {
                 <title>Gael Zarco ∙ Space Shooter</title>
             </Head>
 
-            <div className="flex flex-col w-full max-w-[1900px] p-4 pt-6 max-md:px-3 w-full bg-neutral-900/10">
+            <div id='hero' className="flex flex-col w-full max-w-[1900px] p-4 pt-6 max-md:px-3 w-full bg-neutral-900/10">
                 <div className="inline-flex max-md:flex-col max-md:px-0">
                     <div className="flex flex-col w-7/12 max-w-[760px] lg:px-4 text-left max-md:w-full">
                         <SlideUpDiv className="inline-flex items-center md:max-lg:w-min mb-4 max-md:mb-2">
@@ -58,7 +58,7 @@ export default function SpaceShooter() {
                     </SlideUpDiv>
                 </div>
 
-                <div className="hidden lg:flex">
+                <div className="hidden lg:block">
                     <HorizontalScrollDiv delay={0.9}>
                         <div className='relative min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden'>
                             <img

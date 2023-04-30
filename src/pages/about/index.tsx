@@ -2,7 +2,7 @@ import { SlideUpP } from '@/components/motion'
 
 export default function About() {
     return (
-        <div className="flex flex-col pt-20 mx-auto items-center text-center content-center justify-center bg-neutral-900/10">
+        <div id='hero' className="flex flex-col pt-20 mx-auto items-center text-center content-center justify-center bg-neutral-900/10">
 
             <SlideUpP 
                 className='text-6xl max-md:text-4xl pb-20'
