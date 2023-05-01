@@ -14,32 +14,32 @@ export default function LocalTime() {
 
     const handleTimeMouseMove = (e: MouseEvent) => {
         if (flagRef.current) {
-        const rect = flagRef.current.getBoundingClientRect();
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-        flagRef.current.style.left = `${e.clientX - rect.width - scrollLeft}px`;
-        flagRef.current.style.top = `${e.clientY - rect.height + scrollTop}px`;
+            const rect = flagRef.current.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+            flagRef.current.style.left = `${e.clientX - rect.width - scrollLeft}px`;
+            flagRef.current.style.top = `${e.clientY - rect.height + scrollTop}px`;
         }
     };
 
     const handleTimeHoverEnter = () => {
-        const flagImage = document.createElement('p')
-        flagImage.textContent = '🇺🇸'
-        flagImage.style.position = 'absolute'
-        flagImage.style.width = '30px'
-        flagImage.style.height = '20px'
-        flagRef.current = flagImage
+        const flag = document.createElement('p')
+        flag.textContent = '🇺🇸'
+        flag.style.position = 'absolute'
+        flag.style.width = '30px'
+        flag.style.height = '20px'
+        flagRef.current = flag
 
-        document.body.appendChild(flagImage)
+        document.body.appendChild(flag)
 
         document.addEventListener('mousemove', handleTimeMouseMove)
     }
 
     const handleTimeHoverLeave = () => {
-    if (flagRef.current) {
-        document.body.removeChild(flagRef.current)
-        flagRef.current = null
-    }
+        if (flagRef.current) {
+            document.body.removeChild(flagRef.current)
+            flagRef.current = null
+        }
     }
 
     useEffect(() => {
@@ -48,13 +48,13 @@ export default function LocalTime() {
         }, 1000)
 
         return () => {
-        clearInterval(interval)
-        document.removeEventListener('mousemove', handleTimeMouseMove)
+            clearInterval(interval)
+            document.removeEventListener('mousemove', handleTimeMouseMove)
         }
     }, [])
 
     return (
-        <p className='leading-none flex w-[197px] max-md:w-[173px] border border-white rounded-lg p-1 px-2 text-sm max-md:text-xs'
+        <p className='leading-none flex border border-white rounded-lg p-1 px-2 text-sm max-md:text-xs'
             onMouseEnter={handleTimeHoverEnter} onMouseLeave={handleTimeHoverLeave}>
             LOCAL TIME&nbsp;<ArrowRightIcon />&nbsp;{currentTime}
         </p>

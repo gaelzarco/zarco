@@ -37,7 +37,7 @@ export default function Home() {
               <p className='border border-white rounded-full p-1 ml-2 px-2'>BOOTCAMP GRAD</p>
             </SlideInDiv>
             <SlideInDiv delay={0.7}>
-              <p className='border border-white rounded-full p-1 px-2'>SERVER @ RED LOBSTER 🦞</p>
+              <p className='border border-white rounded-full p-1 px-2'>ANDROID APP DEVELOPER</p>
             </SlideInDiv>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
             </div>
         </div>
 
-        <SectionSeparator>
+        <SectionSeparator className='mt-16 max-sm:mt-12' animate>
           <p>Selected Projects</p>
         </SectionSeparator>
 
@@ -103,7 +103,7 @@ export default function Home() {
           topLeftTag1='WEB GAME' topLeftTag2='VANILLA JS' topRightTag='2021' />
         </HorizontalScroll>
 
-        <SectionSeparator>
+        <SectionSeparator className='mt-16 max-sm:mt-12' animate>
           <p>Hackathons</p>
         </SectionSeparator>
 

@@ -1,18 +1,29 @@
 import type { ReactNode } from "react"
 import { motion } from "framer-motion"
 
-export const SectionSeparator= ({ children } : { children: ReactNode }) => {
+export const SectionSeparator= ({ children, className, animate } : { children: ReactNode, className?: string, animate?: boolean }) => {
   return (
       <div className='w-full'>
-      <motion.div 
-        className='mx-auto border-b border-white mt-16 max-sm:mt-12'
-        initial={{ opacity: 0, width: 0 }}
-        animate={{ opacity: 1, width: "97%", marginInline: "auto" }}
-        transition={{ duration: 0.5, delay: 2 }}
-      ></motion.div>
-        <SlideUpDiv className='bg-white px-2 w-max rounded-full text-black text-lg max-md:text-sm' delay={2.10}>
+      {animate ? (
+        <>
+          <motion.div 
+          className={`mx-auto border-b border-white ${className}}`}
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: '100%', marginLeft: '11px'}}
+          transition={{ duration: 0.5, delay: 2 }}
+        ></motion.div>
+        <SlideUpDiv className='bg-white px-2 w-max rounded-full text-black text-lg max-md:text-sm -translate-y-[1px]' delay={2.10}>
           {children}
         </SlideUpDiv>
+        </>
+      ) : (
+        <>
+          <div className={`mx-auto ml-4 border-b border-white ${className}}`}></div>
+          <div className='bg-white px-2 w-max rounded-full text-black text-lg max-md:text-sm -translate-y-[1px]'>
+          {children}
+        </div>
+        </>
+      )}
     </div>
   )
 }

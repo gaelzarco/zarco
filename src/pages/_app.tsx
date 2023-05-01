@@ -3,6 +3,9 @@ import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
+import { Plus_Jakarta_Sans } from 'next/font/google'
+const jakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
+
 import { AnimatePresence } from 'framer-motion'
 
 import NavBar from '@/components/navbar'
@@ -18,7 +21,7 @@ export default function App( { Component, pageProps, router } : AppProps ) {
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     </Head>
     
-    <main className={`cursor-default ${inter.className} flex flex-col items-center bg-black text-white`}>
+    <main className={`cursor-default ${jakartaSans.className} flex flex-col items-center bg-black text-white`}>
       <div className="sticky top-0 z-20 max-w-[1900px] w-full items-center text-sm">
           <NavBar />
       </div>

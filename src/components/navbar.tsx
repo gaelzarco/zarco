@@ -44,7 +44,7 @@ export default function NavBar() {
             <div className='flex items-center content-center justify-between text-md lg:text-lg'>
                 {router.pathname !== '/' ? (
                     <Link href='/' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-8 hover:cursor-pointer'>
-                        <SlideInP delay={0}>
+                        <SlideInP delay={0.4}>
                             Home
                         </SlideInP>
                     </Link>
