@@ -238,7 +238,7 @@ export default function About() {
 
                         <div className='w-full pt-4 inline-flex justify-between'>
                             <div>
-                                Server Assistant ∙ Juan's Flaming Fajitas & Cantina
+                                Server Assistant ∙ Juan&apos;s Flaming Fajitas & Cantina
                             </div>
                             <div className='ml-4 min-w-[150px] max-sm:min-w-[70px]'>
                                 2022—2023
