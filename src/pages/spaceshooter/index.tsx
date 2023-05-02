@@ -53,7 +53,7 @@ export default function SpaceShooter() {
                         delay={0.7}
                     >
                         <p>
-                            First milestone project for the UNLV Software Development Bootcamp I completed. Space Shooter is a JavaScript game that allows users to control a spaceship and shoot down the enemies that invade the screen. The game is built using vanilla <code>JavaScript</code>, <code>HTML</code>, and <code>CSS</code>. The controls are simple. Move around with your arrow keys and hit the space bar to shoot enemies. The game is over when an enemy touches the bottom of the game screen. Try and get a score of <code>10,000</code>.
+                            First milestone project for the UNLV Software Development Bootcamp I completed. Space Shooter is a JavaScript game that allows users to control a spaceship and shoot down the enemies that invade the screen. The game is built using vanilla JavaScript, HTML, and CSS. Move around with your arrow keys and hit the space bar to shoot enemies. The game is over when an enemy touches the bottom of the game screen.
                         </p>
                     </SlideUpDiv>
                 </div>

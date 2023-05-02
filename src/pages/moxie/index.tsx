@@ -52,7 +52,7 @@ export default function Moxie() {
                         delay={0.7}
                     >
                         <p>
-                            Moxie is a serverless, full-stack social media application. Crafted using <code>NextJS</code>, <code>TypeScript</code>, <code>Tailwind CSS</code>, <code>Radix UI</code>, <code>tRPC</code>, <code>Prisma ORM</code>, <code>PlanetScale (MYSQL)</code>, <code>AWS S3</code>, and <code>Clerk</code> for user authentication and management. Features CRUD operations and allows users to create an account, make a post, reply to others, and send likes. Inspired by Twitter. Originally created using MERN but migrated to T3. <Link href="https://github.com/gaelzarco/MERN-socialmedia" target="_blank" rel="noreferrer" className="underline hover:text-neutral-800 dark:hover:text-neutral-300">Original Project</Link>.
+                            Moxie is a serverless, full-stack social media application. Crafted using NextJS, TypeScript, Tailwind CSS, Radix UI, tRPC, Prisma ORM, PlanetScale (MySQL), AWS S3, and Clerk for user authentication and management. Features CRUD operations and allows users to create an account, make a post, reply to others, and send likes. Inspired by Twitter. Originally created using MERN but migrated to T3. <Link href="https://github.com/gaelzarco/MERN-socialmedia" target="_blank" rel="noreferrer" className="underline hover:text-neutral-800 dark:hover:text-neutral-300">Original Project</Link>.
                         </p>
                     </SlideUpDiv>
                 </div>

@@ -52,7 +52,7 @@ export default function Briefo() {
                         delay={0.7}
                     >
                         <p>
-                            LabLabAI - OpenAI Stack Hack submission. A web application that allows users to create briefs for creative projects and export/download them to a stlyed PDF document. Built with <code>React</code>, <code>Flask</code>, and <code>GPT-3</code>. Received overwhelming positive feedback from start-up founders and engineering students. I served as the team lead and worked with developers from all over the world. Project submission can be found <Link href="https://lablab.ai/event/openai-hackathon/omni/briefo" target="_blank" rel="noreferrer" className="underline hover:text-neutral-800 dark:hover:text-neutral-300"> here</Link>.
+                            LabLabAI - OpenAI Stack Hack submission. A web application that allows users to create briefs for creative projects and export/download them to a stlyed PDF document. Built with React, Flask, and GPT-3. Received overwhelming positive feedback from start-up founders and engineering students. I served as the team lead and worked with developers from all over the world. Project submission can be found <Link href="https://lablab.ai/event/openai-hackathon/omni/briefo" target="_blank" rel="noreferrer" className="underline hover:text-neutral-800 dark:hover:text-neutral-300"> here</Link>.
                         </p>
                     </SlideUpDiv>
                 </div>

@@ -53,7 +53,7 @@ export default function NextCommerce() {
                         delay={0.7}
                     >
                         <p>
-                            Next-Commerce is a full-stack e-commerce web application built with <code>NextJS</code>, <code>Sanity CMS</code>, and features <code>Stripe API</code> integration for payment processing. Implements cart functionality, check-out process, and a successful order confirmation page.
+                            Next-Commerce is a full-stack e-commerce web application built with NextJS, Sanity CMS, and features Stripe API integration for payment processing. Implements cart functionality, Stripe check-out, and a successful order confirmation page.
                         </p>
                     </SlideUpDiv>
                 </div>

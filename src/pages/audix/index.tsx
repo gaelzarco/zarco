@@ -52,7 +52,7 @@ export default function Audix() {
                         delay={0.7}
                     >
                         <p>
-                            A web application that allows users to create and customize a downloadable image of their top 10 Spotify tracks from a specified time-range. Built with <code>React</code>, <code>NodeJS</code>, <code>Express</code>, <code>Flask</code>, and features <code>Spotify Web API</code> integrations. All styling is vanilla <code>CSS</code>.
+                            A web application that allows users to create and customize a downloadable image of their top 10 Spotify tracks from a specified time-range. Built with React, NodeJS, Express, Flask, and features Spotify Web API integration. All styling is vanilla CSS. Demo account is provided in GitHub README.
                         </p>
                     </SlideUpDiv>
                 </div>
