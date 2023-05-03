@@ -4,6 +4,8 @@
   
 #### A dive into my career as a software engineer and a collection of selected works.
  
+ <br />
+ 
 <div align='center'>
 
 <img src='https://img.shields.io/badge/NextJS-NextJS/?logo=nextdotjs&color=black' alt='NextJS'>
