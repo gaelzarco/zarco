@@ -4,8 +4,6 @@
   
 #### A dive into my career as a software engineer and a collection of selected works.
  
- <br />
- 
 <div align='center'>
 
 <img src='https://img.shields.io/badge/NextJS-NextJS/?logo=nextdotjs&color=black' alt='NextJS'>
@@ -17,6 +15,8 @@
 <img src='https://img.shields.io/badge/Framer-Framer/?logo=framer&color=black' alt='Framer-Motion'>
 
 </div> 
+ 
+<br />
 
 <img src='https://readmeimg.s3.us-west-2.amazonaws.com/portfolio-x1_so.png' width='100%'>
 
