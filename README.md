@@ -8,7 +8,7 @@
 
 <img src='https://img.shields.io/badge/Tailwind-Tailwind/?logo=tailwindcss&color=black' alt= 'Tailwind CSS'>
 
-<img src='https://img.shields.io/badge/Framer-Motion-Framer-Motion/?logo=framer&color=black' alt='Framer-Motion'>
+<img src='https://img.shields.io/badge/Framer-Framer/?logo=framer&color=black' alt='Framer-Motion'>
 
 </div> 
 
