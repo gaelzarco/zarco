@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Link as SmoothScrollLink } from 'react-scroll'
-import { ArrowUpIcon } from '@radix-ui/react-icons'
+import { ArrowUpIcon, ArrowTopRightIcon } from '@radix-ui/react-icons'
+import ArrowSVG from '../../public/arrow.svg'
 
 export default function Footer() {
 
@@ -10,13 +11,13 @@ export default function Footer() {
                 className='footer-container relative block h-[120px] max-sm:h-[45px] bg-neutral-900/10 min-w-full border border-white rounded-lg max-sm:rounded-md text-8xl max-sm:text-3xl mt-8 hover:bg-white hover:text-black cursor-pointer overflow-hidden'
             >
                 <div className='absolute block whitespace-nowrap min-w-full h-full footer-scroll'>
-                    <span className='inline-block text-center whitespace-nowrap m-auto min-w-full h-full leading-[120px] max-sm:leading-[45px]'>
-                        CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;
+                    <span className='inline-flex items-center text-center whitespace-nowrap m-auto min-w-full h-full leading-[120px] max-sm:leading-[45px]'>
+                        Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;
                     </span>
                 </div>
                 <div className='absolute block whitespace-nowrap min-w-full h-full footer-scroll footer-scroll2'>
-                    <span className='inline-block text-center whitespace-nowrap m-auto min-w-full h-full leading-[120px] max-sm:leading-[45px]'>
-                        CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;CONTACT&nbsp;
+                    <span className='inline-flex items-center text-center whitespace-nowrap m-auto min-w-full h-full leading-[120px] max-sm:leading-[45px]'>
+                        Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;Let's&nbsp;Talk&nbsp;&nbsp;<ArrowTopRightIcon style={{scale: '8.5'}}/>&nbsp;&nbsp;
                     </span>
                 </div>
             </Link>
@@ -33,7 +34,6 @@ export default function Footer() {
                         Inspired by <a href='https://www.awwwards.com/sites/pedro-matos-chaves-design' target='_blank' className='underline hover:text-neutral-300'>Pedro</a>
                     </p>
                 </div>
-
 
                 <SmoothScrollLink
                     to='hero'

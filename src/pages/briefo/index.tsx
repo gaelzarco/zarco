@@ -57,7 +57,7 @@ export default function Briefo() {
                     </SlideUpDiv>
                 </div>
 
-                <div className="hidden lg:block">
+                <div className="hidden lg:block pl-4">
                     <HorizontalScrollDiv delay={0.9}>
                         <div className='relative min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden'>
                             <img

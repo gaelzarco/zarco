@@ -14,7 +14,7 @@ export default function About() {
             <div id='hero' className='flex flex-col 2xl:flex-row lg:justify-between pt-5 p-4 mx-auto w-full max-w-[1900px] bg-neutral-900/10'>
                 <div className='max-w-[600px] max-2xl:mx-auto p-4'>
                     <SlideUpP className='text-3xl max-sm:text-lg pb-12 leading-[3rem]' delay={0}>
-                        Gael Zarco is a full-stack web engineer with a focus on building fast and visually impressive applications. He is a bootcamp graduate that currently works as an Android app developer, and a server at Red Lobster. With 2+ years of experience in software development, he has had the opportunity to work in start-ups, participate in hackathons, and develop a strong grasp of programming fundamentals.
+                        Gael Zarco is a full-stack web engineer with a focus on building fast and visually impressive applications. He is a bootcamp graduate that currently works as an Android app developer, and a server at Red Lobster. With 3+ years of experience in software, he has had the opportunity to work in start-ups, participate in hackathons, and develop a strong grasp of web development.
                     </SlideUpP>
                     <div className='inline-flex flex-wrap items-center text-center text-md max-sm:text-xs w-full mx-auto justify-between'>
                         <SlideUpDiv delay={0.1} className='mb-2'>
@@ -71,7 +71,7 @@ export default function About() {
 
                             <div className='w-full pt-4 inline-flex justify-between'>
                                 <div>
-                                    Project Manager/Full-Stack Engineer ∙ LabLabAI OpenAI Stack Hack
+                                    Team Lead | Full-Stack Engineer ∙ LabLabAI OpenAI Stack Hack
                                 </div>
                                 <div className='ml-4 min-w-[150px] max-sm:min-w-[70px]'>
                                     2023
@@ -127,7 +127,7 @@ export default function About() {
                                     HTML5 & CSS
                                 </div>
                                 <div className='pt-4'>
-                                    SQL & NoSQL (MongoDB)
+                                    SQL & NoSQL
                                 </div>
                                 <div className='pt-4'>
                                     REST APIs
@@ -194,7 +194,7 @@ export default function About() {
                                     Notion
                                 </div>
                                 <div className='pt-4'>
-                                    Google App Suite
+                                    Postman
                                 </div>
                             </div>
                         </div>
@@ -253,7 +253,7 @@ export default function About() {
 
                             <div className='w-full pt-4 inline-flex justify-between'>
                                 <div>
-                                    Busser/Food Runner ∙ FireRock Steak House
+                                    Busser | Food Runner ∙ FireRock Steak House
                                 </div>
                                 <div className='ml-4 min-w-[150px] max-sm:min-w-[70px]'>
                                     2020—2022
