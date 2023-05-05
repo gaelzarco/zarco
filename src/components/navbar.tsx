@@ -18,7 +18,7 @@ export default function NavBar() {
     return (
         <nav className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-neutral-900/50 backdrop-blur-xl p-3 px-4 m-2 rounded-md drop-shadow-[0_0px_20px_rgba(255,255,255,0.25)] shadow-neutral-800`}>
             <div className='flex items-center content-center justify-between text-sm'>
-                <Link href='/' className='hidden md:inline-flex hover:text-neutral-800 dark:hover:text-neutral-300 text-md lg:text-lg font-semibold'>
+                <Link href='/' className='hidden md:inline-flex hover:text-neutral-800 dark:hover:text-neutral-300 text-md md:text-lg font-semibold'>
                     <SlideInP delay={0}>
                         Gael Zarco
                     </SlideInP>
@@ -41,7 +41,7 @@ export default function NavBar() {
                 </Link>
             </div>
 
-            <div className='flex items-center content-center justify-between text-md lg:text-lg'>
+            <div className='flex items-center content-center justify-between text-md md:text-lg'>
                 {router.pathname !== '/' ? (
                     <Link href='/' className='hover:text-neutral-800 dark:hover:text-neutral-300 pr-8 hover:cursor-pointer'>
                         <SlideInP delay={0.4}>

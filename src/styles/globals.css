@@ -22,20 +22,18 @@ body {
   display: none;
 }
 
-.footer-container {
+/* .footer-container {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .footer-scroll span{
-  animation: scroll-left 60s linear infinite;
-  animation-fill-mode: forwards;
-  transform: translateX(-100%);
+  animation: scroll-left 10s linear infinite;
 }
 
-.footer-scroll2 span {
-  animation-delay: 30s;
+.footer-scroll2 span{
+  animation-delay: 5s;
 }
 
 @keyframes scroll-left {
@@ -44,5 +42,42 @@ body {
   }
   100% {
     transform: translateX(-100%);
+  }
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+.right2left {
+  animation: right2left 20s infinite linear;
+}
+
+
+@keyframes  right2left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
