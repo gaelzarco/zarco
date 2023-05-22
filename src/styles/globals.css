@@ -60,7 +60,6 @@ body {
 
 .scroll div {
   display: flex;
-  gap: 2em;
 }
 
 .scroll p {
@@ -69,7 +68,7 @@ body {
 }
 
 .right2left {
-  animation: right2left 20s infinite linear;
+  animation: right2left 40s infinite linear;
 }
 
 

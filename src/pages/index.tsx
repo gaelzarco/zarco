@@ -12,7 +12,7 @@ import { SlideInDiv, SlideUpDiv, SectionSeparator } from '@/components/motion';
 export default function Home() {
 
   return (
-      <div id='hero' className='flex flex-col w-full max-w-[1900px] p-4 pt-12 max-md:pt-6 w-full bg-neutral-900/10'>
+      <div id='hero' className='flex flex-col w-full max-w-[1900px] p-4 pt-12 max-md:pt-6 bg-neutral-900/10'>
         <div className='flex flex-wrap justify-between'>
           <div className='w-7/12 max-w-[850px] max-lg:w-10/12'>
             <motion.p
@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className='leading-none h-[86px] w-[520px] flex flex-wrap-reverse items-center xl:justify-end pt-4 text-sm max-md:text-xs'>
             <SlideInDiv delay={0.5}>
-              <p className='border border-white rounded-full p-1 px-2'>2+ YEARS OF EXPERIENCE</p>
+              <p className='border border-white rounded-full p-1 px-2'>2+ YEARS OF EDUCATION</p>
             </SlideInDiv>
             <SlideInDiv delay={0.6}>
               <p className='border border-white rounded-full p-1 ml-2 px-2'>BOOTCAMP GRAD</p>
@@ -107,7 +107,7 @@ export default function Home() {
           <p>Hackathons</p>
         </SectionSeparator>
 
-        <motion.div className='mt-14 mb-14 flex flex-col w-full w-full max-md:mb-12'
+        <motion.div className='mt-14 mb-14 flex flex-col w-full max-md:mb-12'
           initial={{ opacity:0, y: 10 }}
           animate={{ opacity:1, y: 0}}
           transition={{ 
