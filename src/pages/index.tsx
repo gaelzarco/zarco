@@ -31,13 +31,13 @@ export default function Home() {
 
           <div className='leading-none h-[86px] w-[520px] flex flex-wrap-reverse items-center xl:justify-end pt-4 text-sm max-md:text-xs'>
             <SlideInDiv delay={0.5}>
-              <p className='border border-white rounded-full p-1 px-2'>2+ YEARS OF EDUCATION</p>
+              <p className='border border-white rounded-full p-1 px-2'>3+ YEARS OF EDU/EXP</p>
             </SlideInDiv>
             <SlideInDiv delay={0.6}>
               <p className='border border-white rounded-full p-1 ml-2 px-2'>BOOTCAMP GRAD</p>
             </SlideInDiv>
             <SlideInDiv delay={0.7}>
-              <p className='border border-white rounded-full p-1 px-2'>ANDROID APP DEVELOPER</p>
+              <p className='border border-white rounded-full p-1 px-2'>SWE INTERN @ PRODUCTOS-AI</p>
             </SlideInDiv>
           </div>
         </div>
