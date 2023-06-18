@@ -15,7 +15,7 @@ export default function SpaceShooter() {
                 <title>Gael Zarco ∙ Space Shooter</title>
             </Head>
 
-            <div id='hero' className="flex flex-col w-full max-w-[1900px] p-4 pt-6 max-md:px-3 w-full bg-neutral-900/10">
+            <div id='hero' className="flex flex-col max-w-[1900px] p-4 pt-6 max-md:px-3 w-full bg-neutral-900/10">
                 <div className="inline-flex max-md:flex-col max-md:px-0">
                     <div className="flex flex-col w-7/12 max-w-[760px] lg:px-4 text-left max-md:w-full">
                         <SlideUpDiv className="inline-flex items-center md:max-lg:w-min mb-4 max-md:mb-2">
