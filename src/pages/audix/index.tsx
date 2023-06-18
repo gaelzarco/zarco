@@ -1,12 +1,9 @@
 import Head from "next/head"
-import Link from "next/link"
-import { motion } from "framer-motion"
-
-import { GitHubLogoIcon } from "@radix-ui/react-icons"
 
 import HorizontalScrollDiv from "@/components/horizontalscroll"
 import Footer from "@/components/footer"
 import { SlideUpDiv, SlideUpP } from "@/components/motion"
+import { GitHubLink } from "@/components/githublink"
 
 export default function Audix() {
     return (
@@ -20,15 +17,6 @@ export default function Audix() {
                     <div className="flex flex-col w-5/12 max-w-[560px] lg:px-4 justify-start text-left max-md:w-full">
                         <SlideUpDiv className="inline-flex items-center w-full mb-4 max-md:mb-2">
                             <h1 className="text-6xl max-md:text-4xl mr-2">Audix</h1>
-                            <Link href="https://github.com/gaelzarco/audix" target="_blank" rel="noreferrer" className="ml-2 h-fit leading-none">
-                                <motion.p
-                                    initial={{ scale: 1.35 }}
-                                    whileHover={{ scale: 1.75 }}
-                                    transition={{ duration: 0.2 }}
-                                >
-                                    <GitHubLogoIcon />
-                                </motion.p>
-                            </Link>
                         </SlideUpDiv>
                         <SlideUpDiv 
                             className='inline-flex flex-wrap w-full items-center text-md max-md:text-xs'
@@ -45,6 +33,7 @@ export default function Audix() {
                                 className='leading-none border border-white rounded-full ml-2 p-1 px-2'
                                 delay={0.5}
                             >2022</SlideUpP>
+                            <GitHubLink href="https://github.com/gaelzarco/audix" />
                         </SlideUpDiv>
                     </div>
                     <SlideUpDiv 
