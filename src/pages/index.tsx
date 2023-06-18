@@ -7,14 +7,23 @@ import { ArrowDownIcon } from "@radix-ui/react-icons";
 import LocalTime from "@/components/localtime";
 import HorizontalScroll from "@/components/horizontalscroll";
 import Footer from "@/components/footer";
+import Notif from "@/components/notif";
 import { SlideInDiv, SlideUpDiv, SectionSeparator } from "@/components/motion";
+import CenterPiece from "@/components/three/centerpiece";
 
 export default function Home() {
   return (
     <div
       id="hero"
-      className="flex flex-col w-full max-w-[1900px] p-4 pt-12 max-md:pt-6 bg-neutral-900/10"
+      className="flex flex-col w-full max-w-[1900px] p-4 pt-12 max-md:pt-6 bg-black z-10"
     >
+      <Notif />
+      <SlideUpDiv
+        className="z-[-1] absolute w-screen h-screen bg-transparent mx-0 my-0 top-0 left-0 bottom-0 right-0"
+        delay={0.8}
+      >
+        <CenterPiece />
+      </SlideUpDiv>
       <div className="flex flex-wrap justify-between">
         <div className="w-7/12 max-w-[850px] max-lg:w-10/12">
           <motion.p
@@ -39,7 +48,7 @@ export default function Home() {
             </p>
           </SlideInDiv>
           <SlideInDiv delay={0.6}>
-            <p className="border border-white rounded-full p-1 ml-2 px-2">
+            <p className="border border-white rounded-full p-1 ml-2 px-2 max-md:mr-2">
               BOOTCAMP GRAD
             </p>
           </SlideInDiv>

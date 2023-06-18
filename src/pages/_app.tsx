@@ -26,7 +26,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       </Head>
 
       <main
-        className={`cursor-default ${inter.className} flex flex-col items-center bg-black text-white`}
+        className={`cursor-default ${inter.className} flex flex-col items-center text-white bg-black`}
       >
         <div className="sticky top-0 z-20 max-w-[1900px] w-full items-center text-sm">
           <NavBar />

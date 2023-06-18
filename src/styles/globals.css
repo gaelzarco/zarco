@@ -4,6 +4,7 @@
 
 body {
   @apply bg-black;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -26,29 +27,6 @@ body {
 .horizontalscroll::-webkit-scrollbar {
   display: none;
 }
-
-/* .footer-container {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.footer-scroll span{
-  animation: scroll-left 10s linear infinite;
-}
-
-.footer-scroll2 span{
-  animation-delay: 5s;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
 
 .container {
   display: flex;

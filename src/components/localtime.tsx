@@ -17,10 +17,8 @@ export default function LocalTime() {
   const handleTimeMouseMove = (e: MouseEvent) => {
     if (flagRef.current) {
       const rect = flagRef.current.getBoundingClientRect();
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      const scrollLeft =
-        window.pageXOffset || document.documentElement.scrollLeft;
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollLeft = document.documentElement.scrollLeft;
       flagRef.current.style.left = `${e.clientX - rect.width - scrollLeft}px`;
       flagRef.current.style.top = `${e.clientY - rect.height + scrollTop}px`;
     }
@@ -30,6 +28,7 @@ export default function LocalTime() {
     const flag = document.createElement("p");
     flag.textContent = "🇺🇸";
     flag.style.position = "absolute";
+    flag.style.zIndex = "10";
     flag.style.width = "30px";
     flag.style.height = "20px";
     flagRef.current = flag;
