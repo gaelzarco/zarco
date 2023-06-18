@@ -5,7 +5,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 import { SlideUpP } from "./motion";
 
-export function GitHubLink({ href }: { href: string }) {
+export default function GitHubLink({ href }: { href: string }) {
   return (
     <Link
       href={href}

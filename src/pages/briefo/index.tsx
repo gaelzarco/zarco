@@ -4,7 +4,7 @@ import Link from "next/link";
 import HorizontalScrollDiv from "@/components/horizontalscroll";
 import Footer from "@/components/footer";
 import { SlideUpDiv, SlideUpP } from "@/components/motion";
-import { GitHubLink } from "@/components/githublink";
+import GitHubLink from "@/components/githublink";
 
 export default function Briefo() {
   return (
