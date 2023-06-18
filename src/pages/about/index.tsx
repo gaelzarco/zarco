@@ -194,16 +194,16 @@ export default function About() {
                                     AWS
                                 </div>
                                 <div className='pt-4'>
-                                    Excalidraw
+                                    Postman
                                 </div>
                                 <div className='pt-4'>
-                                    Canva
+                                    Linux
+                                </div>
+                                <div className='pt-4'>
+                                    Docker
                                 </div>
                                 <div className='pt-4'>
                                     Notion
-                                </div>
-                                <div className='pt-4'>
-                                    Postman
                                 </div>
                             </div>
                         </div>
