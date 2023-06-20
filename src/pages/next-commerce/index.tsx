@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 import HorizontalScrollDiv from "@/components/horizontalscroll";
 import Footer from "@/components/footer";
@@ -60,22 +61,31 @@ export default function NextCommerce() {
         <div className="hidden lg:block pl-4">
           <HorizontalScrollDiv delay={0.9}>
             <div className="relative min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden">
-              <img
-                src="../../static/nextcom-x2_so.png"
+              <Image
+                src="/static/nextcom-x2_so.png"
+                alt="Project screenshot"
+                height={2000}
+                width={2000}
                 className="absolute object-cover w-max h-full rounded-lg"
               />
             </div>
 
             <div className="relative ml-3 min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden">
-              <img
-                src="../../static/nextcom-x1_so.png"
+              <Image
+                src="/static/nextcom-x1_so.png"
+                alt="Project screenshot"
+                height={2000}
+                width={2000}
                 className="absolute object-cover w-max h-full rounded-lg"
               />
             </div>
 
             <div className="relative ml-3 min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden">
-              <img
-                src="../../static/nextcom-x3_so.png"
+              <Image
+                src="/static/nextcom-x3_so.png"
+                alt="Project screenshot"
+                height={2000}
+                width={2000}
                 className="absolute object-cover w-max h-full rounded-lg"
               />
             </div>
@@ -87,20 +97,29 @@ export default function NextCommerce() {
           delay={0.9}
         >
           <div className="w-full mb-4">
-            <img
-              src="../../static/nextcom-x2_so.png"
+            <Image
+              src="/static/nextcom-x2_so.png"
+              alt="Project screenshot"
+              height={2000}
+              width={2000}
               className="w-full h-full rounded-lg"
             />
           </div>
           <div className="w-full mb-4">
-            <img
-              src="../../static/nextcom-x1_so.png"
+            <Image
+              src="/static/nextcom-x1_so.png"
+              alt="Project screenshot"
+              height={2000}
+              width={2000}
               className="w-full h-full rounded-lg"
             />
           </div>
           <div className="w-full">
-            <img
-              src="../../static/nextcom-x3_so.png"
+            <Image
+              src="/static/nextcom-x3_so.png"
+              alt="Project screenshot"
+              height={2000}
+              width={2000}
               className="w-full h-full rounded-lg"
             />
           </div>

@@ -1,5 +1,5 @@
-import { MutableRefObject, useRef } from "react";
-import { Mesh } from "three";
+import { type MutableRefObject, useRef } from "react";
+import type { Mesh } from "three";
 import { useFrame, Canvas } from "@react-three/fiber";
 import { PerspectiveCamera } from "@react-three/drei";
 
