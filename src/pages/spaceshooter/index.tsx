@@ -127,11 +127,9 @@ export default function SpaceShooter() {
             />
           </div>
         </SlideUpDiv>
-
-        <div className="absolute bottom-0 right-0 left-0 mx-4 mb-2">
-          <Footer />
-        </div>
       </div>
+
+      <Footer />
     </>
   );
 }
