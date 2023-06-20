@@ -16,14 +16,16 @@ export function Box() {
       meshRef.current.scale.setX(0.5);
       meshRef.current.scale.setY(0.5);
       meshRef.current.scale.setZ(0.5);
+      meshRef.current.position.setY(0);
     } else if (document.body.clientWidth <= 1024) {
       meshRef.current.scale.setX(1);
       meshRef.current.scale.setY(1);
       meshRef.current.scale.setZ(1);
+      meshRef.current.position.setY(-1);
     } else {
-      meshRef.current.scale.setX(1.5);
-      meshRef.current.scale.setY(1.5);
-      meshRef.current.scale.setZ(1.5);
+      meshRef.current.scale.setX(1.2);
+      meshRef.current.scale.setY(1.2);
+      meshRef.current.scale.setZ(1.2);
     }
   });
 
@@ -40,7 +42,7 @@ export default function CenterPiece() {
     <Canvas>
       <ambientLight intensity={0.1} />
       <pointLight position={[10, 10, 10]} />
-      <PerspectiveCamera makeDefault fov={75} position={[0, 1, 5]} />
+      <PerspectiveCamera makeDefault fov={75} position={[0, -1, 5]} />
       <Box />
     </Canvas>
   );
