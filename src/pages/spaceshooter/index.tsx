@@ -129,7 +129,9 @@ export default function SpaceShooter() {
         </SlideUpDiv>
       </div>
 
-      <Footer />
+      <div className="w-full px-4 max-md:px-3">
+        <Footer />
+      </div>
     </>
   );
 }

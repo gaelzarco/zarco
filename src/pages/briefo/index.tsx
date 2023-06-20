@@ -139,7 +139,9 @@ export default function Briefo() {
         </SlideUpDiv>
       </div>
 
-      <Footer />
+      <div className="w-full px-4 max-md:px-3">
+        <Footer />
+      </div>
     </>
   );
 }
