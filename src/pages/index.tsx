@@ -19,7 +19,7 @@ export default function Home() {
     >
       <Notif />
       <SlideUpDiv
-        className="z-[-1] absolute w-screen h-screen bg-transparent mx-0 my-0 top-0 left-0 bottom-0 right-0"
+        className="z-[-1] absolute w-screen h-[1200px] bg-transparent mx-0 my-0 top-0 left-0 bottom-0 right-0"
         delay={0.8}
       >
         <CenterPiece />
