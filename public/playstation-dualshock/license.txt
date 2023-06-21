@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dualshock (PS1)
+* source:	https://sketchfab.com/3d-models/dualshock-ps1-f7c2b63cb5dd430bab71ec7ff4c8620e
+* author:	YoukaiDrawing (https://sketchfab.com/YoukaiDrawing)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dualshock (PS1)" (https://sketchfab.com/3d-models/dualshock-ps1-f7c2b63cb5dd430bab71ec7ff4c8620e) by YoukaiDrawing (https://sketchfab.com/YoukaiDrawing) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
