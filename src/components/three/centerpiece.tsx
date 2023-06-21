@@ -44,7 +44,7 @@ export function PlaystationDualshock() {
   useFrame(() => {
     if (!primitiveRef.current) return;
 
-    primitiveRef.current.rotation.x += 0.002;
+    primitiveRef.current.rotation.x += 0.004;
     primitiveRef.current.rotation.y += 0.001;
 
     if (document.body.clientWidth <= 640) {
