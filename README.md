@@ -10,6 +10,8 @@
 
 <img src="https://img.shields.io/badge/TypeScript-TypeScript/?logo=typescript&color=black" alt="TypeScript">
 
+<img src="https://img.shields.io/badge/ThreeJS-ThreeJS/?logo=threedotjs&color=black" alt="ThreeJS">
+
 <img src='https://img.shields.io/badge/Tailwind-Tailwind/?logo=tailwindcss&color=black' alt= 'Tailwind CSS'>
 
 <img src='https://img.shields.io/badge/Framer-Framer/?logo=framer&color=black' alt='Framer-Motion'>
