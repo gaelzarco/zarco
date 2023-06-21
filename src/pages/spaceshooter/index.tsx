@@ -67,8 +67,8 @@ export default function SpaceShooter() {
               <Image
                 src="/static/spaceshooter-x2_so.png"
                 alt="Project Screenshot"
-                height={2000}
-                width={2000}
+                height={1500}
+                width={1500}
                 className="absolute object-cover w-max h-full rounded-lg"
               />
             </div>
@@ -77,8 +77,8 @@ export default function SpaceShooter() {
               <Image
                 src="/static/spaceshooter-x1_so.png"
                 alt="Project Screenshot"
-                height={2000}
-                width={2000}
+                height={1500}
+                width={1500}
                 className="absolute object-cover w-max h-full rounded-lg"
               />
             </div>
@@ -87,8 +87,8 @@ export default function SpaceShooter() {
               <Image
                 src="/static/spaceshooter-x3_so.png"
                 alt="Project Screenshot"
-                height={2000}
-                width={2000}
+                height={1500}
+                width={1500}
                 className="absolute object-cover w-max h-full rounded-lg"
               />
             </div>
@@ -103,8 +103,8 @@ export default function SpaceShooter() {
             <Image
               src="/static/spaceshooter-x2_so.png"
               alt="Project Screenshot"
-              height={2000}
-              width={2000}
+              height={1500}
+              width={1500}
               className="w-full h-full rounded-lg"
             />
           </div>
@@ -112,8 +112,8 @@ export default function SpaceShooter() {
             <Image
               src="/static/spaceshooter-x1_so.png"
               alt="Project Screenshot"
-              height={2000}
-              width={2000}
+              height={1500}
+              width={1500}
               className="w-full h-full rounded-lg"
             />
           </div>
@@ -121,16 +121,16 @@ export default function SpaceShooter() {
             <Image
               src="/static/spaceshooter-x3_so.png"
               alt="Project Screenshot"
-              height={2000}
-              width={2000}
+              height={1500}
+              width={1500}
               className="w-full h-full rounded-lg"
             />
           </div>
         </SlideUpDiv>
-      </div>
 
-      <div className="w-full px-4 max-md:px-3">
-        <Footer />
+        <div className="bottom-0 w-full max-w-[1900px]">
+          <Footer />
+        </div>
       </div>
     </>
   );

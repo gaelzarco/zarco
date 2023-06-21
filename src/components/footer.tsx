@@ -32,10 +32,10 @@ export default function Footer() {
         </div>
 
         {/* <div className='flex items-center text-2xl max-sm:text-xl'>
-                    <p>
-                       <a href='https://www.awwwards.com/sites/pedro-matos-chaves-design' target='_blank' className='hover:text-neutral-300'>Special Thanks</a>
-                    </p>
-                </div> */}
+          <p>
+            <a href='https://www.awwwards.com/sites/pedro-matos-chaves-design' target='_blank' className='hover:text-neutral-300'>Special Thanks</a>
+          </p>
+        </div> */}
 
         <SmoothScrollLink
           to="hero"
