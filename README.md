@@ -17,9 +17,10 @@
 <img src='https://img.shields.io/badge/Framer-Framer/?logo=framer&color=black' alt='Framer-Motion'>
 
 </div> 
+
+ ## Features
  
 <div align='left'>
- ## Features
 
  - Window presence/fluidity (Framer Motion)
  - 3D Object rendering/animation (ThreeJS)
@@ -30,6 +31,7 @@
  - Email functionality
  - Tailwind CSS styling
  - SSR
+
 </div>
 
 ## Screenshots
