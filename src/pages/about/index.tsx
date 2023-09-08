@@ -27,14 +27,13 @@ export default function About() {
           >
             Gael Zarco is a full-stack engineer with a focus on building fast
             and visually impressive applications. He is a bootcamp graduate that
-            currently works as a Software Engineer Intern at Productos-AI, and a
-            server at Red Lobster. With 3+ years of education and experience in
-            software, he has had the opportunity to work with start-ups, compete
-            in hackathons, and develop a strong grasp of web engineering and
-            cloud infrastructure.
+            currently works as an IT Technician at Team Tech Solutions. With 3+
+            years of education and experience in software, he has had the
+            opportunity to work with start-ups, compete in hackathons, and
+            develop a firm grasp of web engineering and cloud infrastructure.
           </SlideUpP>
           <div className="inline-flex flex-wrap items-center text-center text-md max-sm:text-xs w-full mx-auto justify-between">
-            <SlideUpDiv delay={0.1} className="mb-2">
+            <SlideUpDiv delay={0} className="mb-2">
               <Link
                 href="mailto:gaelxarco@icloud.com"
                 target="_blank"
@@ -45,7 +44,7 @@ export default function About() {
               </Link>
             </SlideUpDiv>
             <div className="inline-flex items-center mb-2">
-              <SlideUpDiv className="inline-flex items-center" delay={0.3}>
+              <SlideUpDiv className="inline-flex items-center" delay={0.1}>
                 <Link
                   href="https://github.com/gaelzarco/"
                   target="_blank"
@@ -55,7 +54,7 @@ export default function About() {
                   <GitHubLogoIcon className="ml-1" />
                 </Link>
               </SlideUpDiv>
-              <SlideUpDiv className="inline-flex items-center" delay={0.5}>
+              <SlideUpDiv className="inline-flex items-center" delay={0.2}>
                 <Link
                   href="https://www.linkedin.com/in/gaelzarco/"
                   target="_blank"
@@ -65,7 +64,7 @@ export default function About() {
                   <LinkedInLogoIcon className="ml-1" />
                 </Link>
               </SlideUpDiv>
-              <SlideUpDiv className="inline-flex items-center" delay={0.7}>
+              <SlideUpDiv className="inline-flex items-center" delay={0.3}>
                 <Link
                   href="../../resume.pdf"
                   target="_blank"
@@ -82,31 +81,35 @@ export default function About() {
         <div className="max-w-[700px] max-2xl:mx-auto 2xl:p-4">
           <SlideUpDiv
             className="w-full p-6 pb-8 bg-black max-2xl:mt-12 rounded-lg drop-shadow-[0_0px_10px_rgba(255,255,255,0.3)]"
-            delay={0.9}
+            delay={0.5}
           >
             <div className="w-full">
               <SectionSeparator className="pt-0 mt-0">
                 <p>Experience</p>
               </SectionSeparator>
             </div>
+
             <div className="flex flex-col w-full text-md max-sm:text-xs">
               <div className="w-full pt-6 inline-flex justify-between">
-                <div>Software Engineer Intern ∙ Productos-AI</div>
+                <div>IT Technician ∙ Team Tech Solutions</div>
                 <div className="ml-4 min-w-[150px] max-sm:min-w-[70px]">
                   2023—Now
                 </div>
               </div>
+            </div>
 
+            <div className="flex flex-col w-full text-md max-sm:text-xs">
               <div className="w-full pt-6 inline-flex justify-between">
-                <div>Android App Developer ∙ Decoding Greatness Inc.</div>
+                <div>Software Engineer Intern ∙ Productos-AI</div>
                 <div className="ml-4 min-w-[150px] max-sm:min-w-[70px]">
-                  2023—Now
+                  2023—2023
                 </div>
               </div>
 
               <div className="w-full pt-4 inline-flex justify-between">
                 <div>
-                  Team Lead | Full-Stack Engineer ∙ LabLabAI OpenAI Stack Hack
+                  Team Lead | Full-Stack Engineer ∙ LabLabAI OpenAI Stack
+                  Hackathon
                 </div>
                 <div className="ml-4 min-w-[150px] max-sm:min-w-[70px]">
                   2023
@@ -132,8 +135,8 @@ export default function About() {
 
                 <div className="w-full pt-4 inline-flex justify-between">
                   <div>
-                    Coursework towards AAS in Software Programming ∙ College of
-                    Southern Nevada
+                    Coursework towards AAS, CIT in Software Programming,
+                    Computer Science ∙ College of Southern Nevada
                   </div>
                   <div className="ml-4 min-w-[150px] max-sm:min-w-[70px]">
                     2019—2021
@@ -145,7 +148,7 @@ export default function About() {
 
           <SlideUpDiv
             className="w-full p-6 pb-8 bg-black mt-12 rounded-lg drop-shadow-[0_0px_10px_rgba(255,255,255,0.3)]"
-            delay={1.1}
+            delay={0.6}
           >
             <div className="w-full">
               <SectionSeparator className="pt-0 mt-0">
@@ -154,11 +157,11 @@ export default function About() {
             </div>
             <div className="flex flex-row w-full text-md max-sm:text-xs">
               <div className="w-1/2 pt-6 flex flex-col">
-                <div>Full-Stack</div>
+                <div>JavaScript</div>
                 <div className="pt-4">TypeScript</div>
                 <div className="pt-4">Python</div>
                 <div className="pt-4">HTML5 & CSS</div>
-                <div className="pt-4">SQL & NoSQL</div>
+                <div className="pt-4">Postgres & MySQL</div>
                 <div className="pt-4">REST APIs</div>
               </div>
 
@@ -166,9 +169,9 @@ export default function About() {
                 <div>React</div>
                 <div className="pt-4">NextJS</div>
                 <div className="pt-4">Tailwind CSS</div>
-                <div className="pt-4">NodeJS & Express</div>
-                <div className="pt-4">Flask</div>
-                <div className="pt-4">UI/UX</div>
+                <div className="pt-4">NodeJS</div>
+                <div className="pt-4">MongoDB</div>
+                <div className="pt-4">ExpressJS</div>
               </div>
             </div>
 
@@ -189,9 +192,9 @@ export default function About() {
               <div className="w-1/2 pt-6 flex flex-col">
                 <div>AWS</div>
                 <div className="pt-4">Postman</div>
-                <div className="pt-4">Linux</div>
+                <div className="pt-4">GitHub</div>
                 <div className="pt-4">Docker</div>
-                <div className="pt-4">Notion</div>
+                <div className="pt-4">Dev Ops</div>
               </div>
             </div>
 
@@ -220,7 +223,7 @@ export default function About() {
 
           <SlideUpDiv
             className="w-full p-6 pb-8 bg-black mt-12 rounded-lg drop-shadow-[0_0px_10px_rgba(255,255,255,0.3)]"
-            delay={1.3}
+            delay={0.7}
           >
             <div className="w-full">
               <SectionSeparator className="pt-0 mt-0">
@@ -231,7 +234,7 @@ export default function About() {
               <div className="w-full pt-6 inline-flex justify-between">
                 <div>Server ∙ Red Lobster</div>
                 <div className="ml-4 min-w-[150px] max-sm:min-w-[70px]">
-                  2023—Now
+                  2023—2023
                 </div>
               </div>
 

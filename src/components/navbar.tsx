@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-neutral-900/50 backdrop-blur-xl p-3 px-4 m-2 rounded-md drop-shadow-[0_0px_20px_rgba(255,255,255,0.25)] shadow-neutral-800`}
+      className={`${jakartaSans.className} sticky top-0 left-0 right-0 flex items-center content-center justify-between bg-black p-3 m-2 px-4 rounded-md drop-shadow-[0_0_20px_rgba(255,255,255,25%)] shadow-neutral-800`}
     >
       <div className="flex items-center content-center justify-between text-sm">
         <Link

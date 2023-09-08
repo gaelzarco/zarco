@@ -26,19 +26,19 @@ export default function Briefo() {
             <SlideUpDiv className="inline-flex flex-wrap w-full items-center text-md max-md:text-sm max-sm:text-xs">
               <SlideUpP
                 className="leading-none border border-white rounded-full p-1 px-2"
-                delay={0.2}
+                delay={0.1}
               >
                 OPENAI
               </SlideUpP>
               <SlideUpP
                 className="leading-none border border-white rounded-full ml-2 p-1 px-2"
-                delay={0.35}
+                delay={0.2}
               >
                 GPT-3
               </SlideUpP>
               <SlideUpP
                 className="leading-none border border-white rounded-full ml-2 p-1 px-2"
-                delay={0.5}
+                delay={0.3}
               >
                 2023
               </SlideUpP>
@@ -47,7 +47,7 @@ export default function Briefo() {
           </div>
           <SlideUpDiv
             className="flex w-[400px] justify-end text-left max-lg:7/12 max-md:pt-8 max-md:w-[340px] max-md:text-xs"
-            delay={0.7}
+            delay={0.5}
           >
             <p>
               LabLabAI - OpenAI Stack Hack submission. A web application that
@@ -72,7 +72,7 @@ export default function Briefo() {
         </div>
 
         <div className="hidden lg:block pl-4">
-          <HorizontalScrollDiv delay={0.9}>
+          <HorizontalScrollDiv delay={0.6}>
             <div className="relative min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden">
               <Image
                 src="/static/briefo-x1_so.png"
@@ -107,7 +107,7 @@ export default function Briefo() {
 
         <SlideUpDiv
           className="flex flex-col w-full mt-10 mb-20 mx-auto lg:hidden"
-          delay={0.9}
+          delay={0.7}
         >
           <div className="w-full mb-4">
             <Image

@@ -54,7 +54,7 @@ export default function Home() {
           </SlideInDiv>
           <SlideInDiv delay={0.7}>
             <p className="border border-white rounded-full p-1 px-2">
-              SWE INTERN @ PRODUCTOS-AI
+              IT TECH @ TEAM TECH SOLUTIONS
             </p>
           </SlideInDiv>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
           <SmoothScrollLink
             to="work"
             smooth={true}
-            duration={1000}
+            duration={500}
             offset={-100}
             className="inline-flex items-center text-2xl max-md:text-xl hover:cursor-pointer"
           >
@@ -85,7 +85,7 @@ export default function Home() {
       >
         <SlideUpDiv
           className="w-5/12 max-sm:w-full text-4xl max-md:text-2xl"
-          delay={1.75}
+          delay={1.1}
         >
           <p>Showcase of selected projects and various other works</p>
         </SlideUpDiv>
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="flex flex-col my-auto ">
             <SlideUpDiv
               className="inline-flex items-center justify-end"
-              delay={1.75}
+              delay={1.1}
             >
               <p>FEATURING</p>
               <p className="leading-none border border-white rounded-full ml-2 p-1 px-2">
@@ -108,7 +108,7 @@ export default function Home() {
             </SlideUpDiv>
             <SlideUpDiv
               className="inline-flex items-center justify-end max-sm:justify-start mt-2"
-              delay={1.85}
+              delay={1.125}
             >
               <p>FROM</p>
               <p className="leading-none border border-white rounded-full ml-2 mr-2 p-1 px-2">
@@ -127,7 +127,7 @@ export default function Home() {
         <p>Selected Projects</p>
       </SectionSeparator>
 
-      <HorizontalScroll delay={2.45}>
+      <HorizontalScroll delay={1.15}>
         <ProjectShowcase
           first
           projectName="Audix"
@@ -176,7 +176,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.5,
-          delay: 2,
+          delay: 1.15,
         }}
       >
         <motion.div

@@ -25,19 +25,19 @@ export default function NextCommerce() {
             <SlideUpDiv className="inline-flex flex-wrap w-full items-center text-md max-md:text-sm max-sm:text-xs">
               <SlideUpP
                 className="leading-none border border-white rounded-full p-1 px-2"
-                delay={0.2}
+                delay={0.1}
               >
                 FULL-STACK
               </SlideUpP>
               <SlideUpP
                 className="leading-none border border-white rounded-full ml-2 p-1 px-2"
-                delay={0.35}
+                delay={0.2}
               >
                 UI/UX
               </SlideUpP>
               <SlideUpP
                 className="leading-none border border-white rounded-full ml-2 p-1 px-2"
-                delay={0.5}
+                delay={0.3}
               >
                 2022
               </SlideUpP>
@@ -47,7 +47,7 @@ export default function NextCommerce() {
 
           <SlideUpDiv
             className="flex w-[400px] justify-end text-left  max-md:pt-8 max-md:w-[300px] max-md:text-xs"
-            delay={0.7}
+            delay={0.5}
           >
             <p>
               Next-Commerce is a full-stack e-commerce web application built
@@ -59,7 +59,7 @@ export default function NextCommerce() {
         </div>
 
         <div className="hidden lg:block pl-4">
-          <HorizontalScrollDiv delay={0.9}>
+          <HorizontalScrollDiv delay={0.6}>
             <div className="relative min-w-[693px] flex h-[520px] max-md:min-w-[507px] max-md:h-[380px] rounded-lg overflow-hidden">
               <Image
                 src="/static/nextcom-x2_so.png"
@@ -94,7 +94,7 @@ export default function NextCommerce() {
 
         <SlideUpDiv
           className="flex flex-col w-full mt-10 mb-20 mx-auto lg:hidden"
-          delay={0.9}
+          delay={0.7}
         >
           <div className="w-full mb-4">
             <Image

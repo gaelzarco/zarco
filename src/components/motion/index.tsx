@@ -18,11 +18,11 @@ export const SectionSeparator = ({
             className={`mx-auto border-b border-white ${className}}`}
             initial={{ opacity: 0, width: 0 }}
             animate={{ opacity: 1, width: "100%", marginLeft: "11px" }}
-            transition={{ duration: 0.5, delay: 2 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           ></motion.div>
           <SlideUpDiv
             className="bg-white px-2 w-max rounded-full text-black text-lg max-md:text-sm -translate-y-[1px]"
-            delay={2.1}
+            delay={0.85}
           >
             {children}
           </SlideUpDiv>
