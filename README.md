@@ -17,8 +17,24 @@
 <img src='https://img.shields.io/badge/Framer-Framer/?logo=framer&color=black' alt='Framer-Motion'>
 
 </div> 
+
+ ## Features
  
-<br />
+<div align='left'>
+
+ - Window presence/fluidity (Framer Motion)
+ - 3D Object rendering/animation (ThreeJS)
+ - Dynamic navigation bar
+ - Horizontal scrollbars
+ - Beautiful UI interface
+ - CV link
+ - Email functionality
+ - Tailwind CSS styling
+ - SSR
+
+</div>
+
+## Screenshots
 
 <img src='https://readmeimg.s3.us-west-2.amazonaws.com/portfolio-x1_so.png' width='100%'>
 
