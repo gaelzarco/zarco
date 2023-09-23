@@ -157,6 +157,15 @@ export default function Home() {
         />
 
         <ProjectShowcase
+          projectName="Social Space"
+          projectEndpoint="sspace"
+          projectImgSrc="../static/darkshots.png"
+          topLeftTag1="REAL-TIME"
+          topLeftTag2="FULL-STACK"
+          topRightTag="2023"
+        />
+
+        <ProjectShowcase
           projectName="Space Shooter"
           projectEndpoint="spaceshooter"
           projectImgSrc="../static/spaceshooter-x1_so.png"
