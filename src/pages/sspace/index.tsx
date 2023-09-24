@@ -52,11 +52,11 @@ export default function NextCommerce() {
             <p>
               Social Space is a real-time chat application that features the use
               of React Server Components, Redis database, Tailwind CSS for
-              styling, and Next.js 13's App router. It's core functionality is
-              built around webhooks so you can add friends, send messages, and
-              receive notifications, all in real-time. Try adding yourself as a
-              friend or just switch between Light and Dark mode. It is fluid and
-              responsive.
+              styling, and Next.js 13&apos;s App router. It&apos;s core
+              functionality is built around webhooks so you can add friends,
+              send messages, and receive notifications, all in real-time. Try
+              adding yourself as a friend or just switch between Light and Dark
+              mode. It is fluid and responsive.
             </p>
           </SlideUpDiv>
         </div>
