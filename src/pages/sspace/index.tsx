@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import { SlideUpDiv, SlideUpP } from "@/components/motion";
 import GitHubLink from "@/components/githublink";
 
-export default function NextCommerce() {
+export default function SocialSpace() {
   return (
     <>
       <Head>
@@ -105,7 +105,7 @@ export default function NextCommerce() {
               alt="Project screenshot"
               height={1500}
               width={1500}
-              className="absolute object-cover w-max h-full rounded-lg"
+              className="w-full h-full rounded-lg"
             />
           </div>
           <div className="w-full mb-4">
@@ -114,7 +114,7 @@ export default function NextCommerce() {
               alt="Project screenshot"
               height={1500}
               width={1500}
-              className="absolute object-cover w-max h-full rounded-lg"
+              className="w-full h-full rounded-lg"
             />
           </div>
           <div className="w-full">
@@ -123,7 +123,7 @@ export default function NextCommerce() {
               alt="Project screenshot"
               height={1500}
               width={1500}
-              className="absolute object-cover w-max h-full rounded-lg"
+              className="w-full h-full rounded-lg"
             />
           </div>
         </SlideUpDiv>
