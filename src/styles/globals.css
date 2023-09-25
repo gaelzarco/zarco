@@ -8,6 +8,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .project::after {
   content: "";
   position: absolute;
