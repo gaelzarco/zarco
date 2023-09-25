@@ -31,7 +31,7 @@ export default function HorizontalScroll({
         onMouseEnter={handleMouseEnter}
         onWheel={(e) => {
           e.preventDefault();
-          document.body.style.overflow = "hidden";
+          document.body.style.overflowY = "hidden";
           const strength = Math.abs(e.deltaY);
           const projectDiv = e.currentTarget;
 
