@@ -101,29 +101,29 @@ export default function NextCommerce() {
         >
           <div className="w-full mb-4">
             <Image
-              src="/static/nextcom-x2_so.png"
+              src="/static/landingshots.png"
               alt="Project screenshot"
               height={1500}
               width={1500}
-              className="w-full h-full rounded-lg"
+              className="absolute object-cover w-max h-full rounded-lg"
             />
           </div>
           <div className="w-full mb-4">
             <Image
-              src="/static/nextcom-x1_so.png"
+              src="/static/darkshots.png"
               alt="Project screenshot"
               height={1500}
               width={1500}
-              className="w-full h-full rounded-lg"
+              className="absolute object-cover w-max h-full rounded-lg"
             />
           </div>
           <div className="w-full">
             <Image
-              src="/static/nextcom-x3_so.png"
+              src="/static/whiteshots.png"
               alt="Project screenshot"
               height={1500}
               width={1500}
-              className="w-full h-full rounded-lg"
+              className="absolute object-cover w-max h-full rounded-lg"
             />
           </div>
         </SlideUpDiv>
