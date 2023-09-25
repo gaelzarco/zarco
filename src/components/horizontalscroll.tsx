@@ -8,14 +8,6 @@ export default function HorizontalScroll({
   children: ReactNode[] | ReactNode;
   delay: number;
 }) {
-  const handleMouseEnter = () => {
-    document.body.style.overflowY = "hidden";
-  };
-
-  const handleMouseLeave = () => {
-    document.body.style.overflowY = "auto";
-  };
-
   return (
     <motion.div
       variants={{
@@ -28,10 +20,7 @@ export default function HorizontalScroll({
     >
       <div
         className="horizontalscroll flex overflow-x-auto my-20 max-md:my-10 scrollbar-none"
-        onMouseEnter={handleMouseEnter}
         onWheel={(e) => {
-          e.preventDefault();
-          document.body.style.overflowY = "hidden";
           const strength = Math.abs(e.deltaY);
           const projectDiv = e.currentTarget;
 
@@ -41,7 +30,6 @@ export default function HorizontalScroll({
             behavior: strength > 70 ? "auto" : "smooth",
           });
         }}
-        onMouseLeave={handleMouseLeave}
       >
         {children}
       </div>
