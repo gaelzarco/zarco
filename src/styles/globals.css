@@ -8,10 +8,6 @@ body {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .project::after {
   content: "";
   position: absolute;
@@ -26,10 +22,6 @@ body::-webkit-scrollbar {
     rgba(0, 0, 0, 0.5) 100%
   );
   pointer-events: none;
-}
-
-.horizontalscroll::-webkit-scrollbar {
-  display: none;
 }
 
 .container {

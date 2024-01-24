@@ -17,22 +17,9 @@ export default function HorizontalScroll({
       initial="hidden"
       animate="visible"
       transition={{ duration: 0.5, delay: delay }}
+      className="flex my-20 max-md:my-10 max-md:overflow-x-auto max-md:scrollbar-hidden lg:overflow-x-scroll"
     >
-      <div
-        className="horizontalscroll flex overflow-x-auto my-20 max-md:my-10 scrollbar-none"
-        onWheel={(e) => {
-          const strength = Math.abs(e.deltaY);
-          const projectDiv = e.currentTarget;
-
-          projectDiv.scrollTo({
-            left: projectDiv.scrollLeft + e.deltaY,
-            // large scrolls with smooth animation behavior will lag, so switch to auto
-            behavior: strength > 70 ? "auto" : "smooth",
-          });
-        }}
-      >
-        {children}
-      </div>
+      {children}
     </motion.div>
   );
 }
